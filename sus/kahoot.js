@@ -4,6 +4,8 @@ var btn2 = document.getElementById('Choix2')
 var quest_num = document.getElementById('Numquest')
 var quest_content = document.getElementById('question_content')
 quest1()
+checkcookie()
+
 
 // *Questions
 function quest1(){
@@ -125,7 +127,9 @@ function elimplayer(){
         }, 5650);
     })
 
-
+    let showTry = document.getElementById('nbTry')
+    showTry.style.visibility = "hidden"
+    Add1toCookie()
 }
 let playsound = function playsound(){
     return new Promise((resolve, reject)=>{
@@ -178,3 +182,68 @@ function go2nextQuest(){
         alert('Il foutait quoi en E² lui?')
     }
 }
+
+
+
+// info: Section Cookie
+
+
+    //info:Chercher le contenu d'une info d'un cookie
+    function getCookie(cname) {
+        let name = cname + "=";
+        let decodedCookie = decodeURIComponent(document.cookie);
+        let ca = decodedCookie.split(';');
+        for(let i = 0; i < ca.length; i++) {
+          let c = ca[i];
+          while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+          }
+          if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+          }
+        }
+        return "";
+      }
+
+
+// info: Ajoute 1 au nombre d'essai
+function Add1toCookie(){
+    let date = new Date(Date.now() + 86400000*7);  // Calcule le temps qu'il sera au bout d'une semaine
+    date = date.toUTCString();
+
+    let nbTry = getCookie('Try_QCM')
+    if(nbTry != ""){
+        let nbTry = Number(getCookie("Try_QCM"))  //Conversion du texte en nombre
+        nbTry = nbTry+1
+        document.cookie = 'Try_QCM='+nbTry+'; path=/ ; expires=' + date;
+    }else{
+        document.cookie = 'Try_QCM=1; path=/ ; expires=' + date;
+    }   
+}
+
+// info: Crée un cookie en cas de 1ere visite
+
+function checkcookie(){
+    let date = new Date(Date.now() + 86400000*7);  // Calcule le temps qu'il sera au bout d'une semaine
+    date = date.toUTCString();
+
+    let nbTry = getCookie('Try_QCM')
+    if(nbTry != ""){
+
+    }else{
+        document.cookie = 'Try_QCM=1; path=/ ; expires=' + date;
+    }  
+}
+
+
+
+// info:Affichage du numéro de l'essai
+let showTry = document.getElementById('nbTry')
+
+let nbTry = getCookie('Try_QCM')
+if(nbTry != ""){
+    showTry.innerHTML = `<br><br><br><br>Essai n°: ${nbTry}<br><br><br><br><br>Cette fonctionnalité nécessite d'utiliser les cookies et comme en JavaScript c'est un peu relou soit reconnaissant stp (Ps: Baptiste est un génie du code pour avoir fait ça)`
+}else{
+    showTry.innerHTML = "Essai n°1"
+}
+
