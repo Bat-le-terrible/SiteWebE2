@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" name="viewport" content="width=device-width">
+    <title>L'équipe de rédaction</title>
+
+    <script>
+        if (navigator.userAgent.match(/iphone/i) || navigator.userAgent.match(/Android/i)) {
+            console.log("Appareil détecté: Mobile ou tablette ")
+            document.write('<link rel="stylesheet" href="mobile_style.css">');
+            document.write('<link rel="stylesheet" href="mobile_style.css">');
+        } else {
+            console.log("Appareil détecté: ordinateur");
+            document.write('<link rel="stylesheet" href="style.css">');
+        }
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <div id="contenant">
+            <img id="bg_header" src="Images/wallpeper.jpeg" alt="image de fond">
+            <div class="titre_page">
+                L'équipe de rédaction
+            </div>
+        </div>
+
+        <nav id="Bandeau">
+
+            <ul class="actions">
+                <li><a href="index.html"><img id="logo" src="Images/Logo_lycee.png" titre="Logo"alt="logo du lycée"></a></li>
+                <li><button class="btnact" onclick="window.location.href = 'index.html';">Accueil</button></li>
+                <li><button class="btnact" id="btnrub"> Rubriques ▼</button></li>
+                <li><button class="btnact" onclick="window.location.href = 'extras.html';">Les Extras</button></li>
+                <li><button class="btnact" onclick="window.location.href = 'credits.html';">L'équipe de rédaction</button></li>
+            </ul>
+            <img id="topPage" src="Images/fleche.png" alt="bandeau de séparation">
+        </nav>
+
+    </header>
+
+    <!-- *Menu Rubriques -->        
+    <div id="rub_is_visible">false</div>
+    <div id="test">    
+        <button class="rubriques" onclick="window.location.href = 'Rubriques/voyage.html';">Voyage</button> <br>
+        <button class="rubriques" onclick="window.location.href = 'Rubriques/culture.html';">Culture</button><br>
+        <button class="rubriques" onclick="window.location.href = 'Rubrique/actus.html';">Actualités</button><br>
+        <button class="rubriques" onclick="window.location.href = 'Rubriques/sorties.html';">Sorties</button><br>
+        <button class="rubriques" onclick="window.location.href = 'Rubriques/scientifique.html';">Scientifique</button>
+    </div>
+    <section></section>
+
+    <!-- ! Script -->    
+    <script src="app.js"></script>
+
+</body>
+
+</html>

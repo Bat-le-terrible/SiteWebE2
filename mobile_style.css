@@ -1,0 +1,262 @@
+body {
+    margin : 0px;
+    padding : 0px;
+    text-align: justify;
+    background-color: rgb(220, 220, 220);
+    scrollbar-width: none;
+    }
+
+#logo{
+    position: absolute;
+    top: 17px;
+    left: 13px;
+    height: 80px;
+    width: 140px;
+}
+/* Haut de page */
+#bg_header{
+    width: 100%;
+    z-index: 1;
+    top:80px;
+
+}
+.titre_page{
+
+    color: white;
+    font-size: 80px;
+    font-weight: bold;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);   
+}
+
+
+#contenant {
+    position: relative;
+    text-align: center;
+    color:red;
+    top:80px;
+
+}
+#pourmobile{
+    color:orange;
+}
+
+#Bandeau{
+    width: 100%;
+    /* height: 100px; */
+    background: rgb(30,30,30);  /*A régler sur transparent et ajouter la couleur au scroll (js)*/
+    z-index: 2;
+    position: fixed;
+    top:-10px;
+    left:0px;
+    transition: all 0.3s ease-out;  /*Pour l'animation (fondu sur 0.3 sec*/
+}
+#Bandeau:hover{
+    background: rgb(30,30,30);
+}
+/* Bouttons du bandeau */
+.actions{
+    margin-top: 38px;
+    list-style-type: none;  /*retire les points devant chaque objet "item"*/
+    display: flex;          /*Aligne les objets*/
+    justify-content: right;
+    align-items: right;
+}
+.btnact{
+    color: white;
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 170%;
+    margin: 0 10px;
+}
+button:hover{
+    text-decoration: underline;
+}
+
+/* Menu déroulant */
+.rubriques{
+    font-size: 90%;
+    color:white;
+    background: transparent;
+    border-color: transparent;
+
+}
+.menu{
+    list-style-type: none;  /*retire les points devant chaque objet "item"*/
+    justify-content: center;
+    align-items: center;  
+}
+/*Test*/
+#test{
+    background: rgb(30,30,30);
+    width: 20%;
+    height:180px;
+    text-align: center;
+    font-size: 200%;
+    right: 455px;
+    position: fixed;
+    top: 86px;
+    visibility: hidden;
+        
+}
+#rub_is_visible{
+    color: rgb(220, 220, 220);
+}
+
+
+/* Boutton haut de page */
+#topPage{
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    visibility: hidden;
+    width : 100px;
+    height : 90px;
+    cursor: pointer;
+
+}
+
+
+
+/* Contenue de la page */
+section{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+
+.sep {
+    width: 600px;
+    display: block;
+    margin: auto;
+}
+
+h1{
+    font-size: 300%;
+    text-decoration: double;
+    }
+
+h2 {
+    /* text-align: left; */
+    font-style: italic;
+    font-size: x-large;
+    font-family: 'Segoe UI', Verdana, Tahoma, Geneva, sans-serif, Geneva, Tahoma, sans-serif;
+
+
+}
+
+h3 {
+    text-align: left;
+    text-decoration: none;
+    font-size: large;
+    font-family: 'Segoe UI', Verdana, Tahoma, Geneva, sans-serif, Geneva, Tahoma, sans-serif;
+
+}
+
+p {
+    color: black;
+    text-align: justify;
+    text-decoration: none;
+    font-size:medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+
+
+
+
+/* Pour les articles */
+.voyage{
+    color: rgb(7, 34, 190);
+    background-color:rgb(7, 34, 190) ;
+}
+
+.culture {
+    color:rgb(190, 7, 7);
+}
+
+.sorties {
+    color:rgb(25, 133, 3);
+}
+
+.actualité {
+    color:rgb(126, 5, 163);
+}
+
+.scientifique {
+    color:rgb(216, 0, 198);
+}
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+mark {
+    background-color: yellow;
+}
+
+.attaque {
+    font-weight: bold;
+    font-style: italic;
+    color: black;
+    font-size: medium;
+    text-align: center;
+    margin: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Section rubriques */
+#choix_rubriques{
+    text-align: center;
+    justify-content: center;
+    margin:10%;
+}
+.btnrub{
+    color: white;
+    border-radius: 10px;
+    font-size: 160%;
+    margin: 0 15px;
+    padding: 15px;    
+}
+/* .btnrub:hover{
+    font-size: 200%;
+} */
+#btn1{
+    background-color:rgb(7, 34, 190) ;
+    border-color: rgb(7, 34, 190);
+}
+#btn2{
+    background-color:rgb(190, 7, 7) ;
+    border-color: rgb(190, 7, 7);
+}
+#btn3{
+    background-color:rgb(126, 5, 163) ;
+    border-color: rgb(126, 5, 163);
+}
+#btn4{
+    background-color:rgb(25, 133, 3) ;
+    border-color:rgb(25, 133, 3);
+}
+#btn5{
+    background-color: rgb(216, 0, 198);
+    border-color: rgb(216, 0, 198);
+}
+#btn6{
+    color: black;
+}

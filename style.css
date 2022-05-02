@@ -1,0 +1,323 @@
+:root{
+    /* Créer des variables */
+    --couleur-orange: rgb(255,165,0)
+}
+
+body {
+    margin : 0px;
+    padding : 0px;
+    text-align: justify;
+    background-color: rgb(220, 220, 220);
+
+    }
+
+#logo{
+    position: absolute;
+    top: 17px;
+    left: 13px;
+    height: 40px;
+    width: 70px;
+}
+/* Haut de page */
+#bg_header{
+    width: 100%;
+    z-index: 1;
+
+}
+.titre_page{
+    color: rgb(253, 253, 253);
+    font-size: 80px;
+    font-weight: bold;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);   
+}
+
+
+#contenant {
+    position: relative;
+    text-align: center;
+    color:red;
+}
+#pourmobile{
+    visibility: hidden;
+}
+
+#Bandeau{
+    width: 100%;
+    height: 65px;
+    background: transparent;  /*A régler sur transparent et ajouter la couleur au scroll (js)*/
+    z-index: 2;
+    position: fixed;
+    top:-10px;
+    left:0px;
+    transition: all 0.3s ease-out;  /*Pour l'animation (fondu sur 0.3 sec*/
+}
+
+/* Bouttons du bandeau */
+.actions{
+    margin-top: 23px;
+    list-style-type: none;  /*retire les points devant chaque objet "item"*/
+    display: flex;          /*Aligne les objets*/
+    justify-content: right;
+    align-items: right;
+}
+.btnact{
+    color: white;
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 130%;
+    margin: 0 10px;
+    text-shadow: 2px 1px black;
+}
+button:hover{
+    text-decoration: underline;
+}
+
+/* Menu déroulant */
+.rubriques{
+    font-size: 90%;
+    color:white;
+    background: transparent;
+    border-color: transparent;
+
+}
+.menu{
+    list-style-type: none;  /*retire les points devant chaque objet "item"*/
+    justify-content: center;
+    align-items: center;  
+}
+/*Test*/
+#test{
+    background: rgb(30,30,30);
+    width: 150px;
+    height:120px;
+    text-align: center;
+    right: 370px;
+    position: fixed;
+    top: 55px;
+    visibility: hidden;
+        
+}
+#rub_is_visible{
+    color: rgb(220, 220, 220);
+}
+
+/* Boutton haut de page */
+#topPage{
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    visibility: hidden;
+    width : 100px;
+    height : 90px;
+    cursor: pointer;
+
+}
+
+
+
+/* Contenue de la page */
+section{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+
+.sep {
+    width: 600px;
+    display: block;
+    margin: auto;
+}
+
+h1{
+    font-size: 300%;
+    text-decoration: double;
+    }
+
+h2 {
+    /* text-align: left; */
+    font-style: italic;
+    font-size: x-large;
+    font-family: 'Segoe UI', Verdana, Tahoma, Geneva, sans-serif, Geneva, Tahoma, sans-serif;
+
+
+}
+
+h3 {
+    text-align: left;
+    text-decoration: none;
+    font-size: large;
+    font-family: 'Segoe UI', Verdana, Tahoma, Geneva, sans-serif, Geneva, Tahoma, sans-serif;
+
+}
+
+p {
+    color: black;
+    text-align: justify;
+    text-decoration: none;
+    font-size:medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+
+
+
+
+/* Pour les articles */
+.voyage{
+    color: rgb(7, 34, 190);
+    background-color:rgb(7, 34, 190) ;
+}
+
+.culture {
+    color:rgb(190, 7, 7);
+}
+
+.sorties {
+    color:rgb(25, 133, 3);
+}
+
+.actualité {
+    color:rgb(126, 5, 163);
+}
+
+.scientifique {
+    color:rgb(216, 0, 198);
+}
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+mark {
+    background-color: yellow;
+}
+
+.attaque {
+    font-weight: bold;
+    font-style: italic;
+    color: black;
+    font-size: medium;
+    text-align: center;
+    margin: 60px;
+}
+#edito{
+    font-size: 105%;
+}
+
+
+
+
+
+
+
+
+
+
+/* Section rubriques */
+#choix_rubriques{
+    text-align: center;
+    justify-content: center;
+    margin: 5%;
+}
+.btnrub{
+    color: white;
+    border-radius: 10px;
+    font-size: 160%;
+    margin: 0 15px;
+    padding: 15px;  
+    box-shadow: 2px 2px black;  
+}
+
+#btn1{
+    background-color:rgb(7, 34, 190) ;
+    border-color: rgb(7, 34, 190);
+}
+#btn2{
+    background-color:rgb(190, 7, 7) ;
+    border-color: rgb(190, 7, 7);
+}
+#btn3{
+    background-color:rgb(126, 5, 163) ;
+    border-color: rgb(126, 5, 163);
+}
+#btn4{
+    background-color:var(--couleur-orange) ;
+    border-color: var(--couleur-orange);
+}
+#btn5{
+    background-color: rgb(216, 0, 198);
+    border-color: rgb(216, 0, 198);
+}
+#btn6{
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+/* Sado mazo land */
+/* #menu2{
+    list-style-type: none;
+    background-color: transparent;
+}
+#menu2::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+a{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid transparent; 
+    padding: 10px 0px;
+    text-align: center;
+}
+a:hover{
+    text-decoration: underline;
+}
+.sous{
+    display: none;
+    background-color: rgb(30,30,30);
+    position: absolute;
+    width: 9%;
+
+}
+#menu2 li:hover .sous{
+    display: block;
+}
+.sous li{
+    float: none;
+    width: 100%;
+} */
+
+footer{
+    width: 100%;
+    height: 150px;
+    background-color:  #6c3a27;
+    color: white;
+}
+
+table{
+    text-align: center;
+}
+
+#footerSouligne {
+    text-decoration: underline;
+}
+#ඞ{
+    color: #6c3a27;
+}
