@@ -109,6 +109,13 @@ function quest11(){
         }, 5000);
     }
 }
+function quest12(){
+    quest_num.innerHTML = "Question 12:" ; quest_content.innerHTML = "Babaji o la ikis bokes seris ikis"
+    btn1.innerHTML = "Babaji"; btn2.innerHTML = "ikis bokes seris ikis"
+
+    btn1.classList.remove('aux'); btn1.classList.add('vrai')
+    btn2.classList.remove('vrai'); btn2.classList.add('faux')
+}
 
 // const StartTimer = setTimeout(elimplayer, 5000)
 // function stop(){
@@ -132,6 +139,7 @@ function elimplayer() {
     //*Changement du contenu de page
     let question = document.getElementById("question")
     let elim = document.getElementById('elim')
+    let gif = document.getElementById('gif')
 
     question.style.visibility = "hidden"
     elim.style.visibility = "visible"
@@ -142,6 +150,7 @@ function elimplayer() {
 
     // info: Elimination 1 (squid game)
     playsound().then(() => {
+        gif.style.visibility = "visible"
         setTimeout(() => {
             window.location.href = "../index.html"
         }, 5650);
