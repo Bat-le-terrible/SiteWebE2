@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+    <title>Yo</title>
+
+    <script>
+        if(navigator.userAgent.match (/iphone/i) || navigator.userAgent.match (/Android/i)){
+            console.log("Appareil détecté: Mobile ou tablette ")
+            document.write ('<link rel="stylesheet" href="../../mobile_style.css">');
+        }else{
+                console.log("Appareil détecté: ordinateur");
+                document.write ('<link rel="stylesheet" href="../../style.css">');
+            }
+    </script>
+</head>
+
+
+
+<body>
+    <header>
+        <div id="contenant">
+            <img id ="bg_header" src="../../Images/wallpeper.jpeg" alt="image de fond"> 
+            <div class="titre_page">
+               Rubrique scientifique
+            </div>
+       </div>
+       
+        <nav id="Bandeau">
+
+            <ul class="actions">
+                <li><a href="../../index.html"><img id="logo" src="../../Images/Logo_lycee.png" titre="Logo" alt="logo du lycée"></a></li>
+                <li><button class="btnact" onclick="window.location.href = '../../index.html';">Accueil</button></li>
+                <li><button class="btnact" id="btnrub"> Rubriques ▼</button></li>
+                <li><button class="btnact" onclick="window.location.href = '../extras.html';">Les Extras</button></li>
+                <li><button class="btnact" onclick="window.location.href = '../../credits.html';">L'équipe de rédaction</button></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div id="test">
+        <button class = "rubriques" onclick="window.location.href = '../voyage.html';">Voyage</button> <br>
+        <button class = "rubriques" onclick="window.location.href = '../culture.html';">Culture</button><br>
+        <button class = "rubriques" onclick="window.location.href = '../actus.html';">Actualités</button><br>
+        <button class = "rubriques" onclick="window.location.href = '../sorties.html';">Sorties</button><br>
+        <button class = "rubriques" onclick="window.location.href = '../scientifique.html';">Scientifique</button>
+    </div>
+
+
+
+    <section>
+        <h1 class="scientifique">2001 : l'Odyssée de l'Espace</h1>
+        <p class="attaque">La vie unicellulaire prendra-t-elle le dessus ?</em></p>
+        <img class="imgArt" src="../images/blob_illus.jpg" height="100%">
+        <h4>Rédaction par Clémentine Catalano, Elya Castaing et Abigael Walmsley</h4>
+    </section>
+
+    <section>
+        <br/>
+        <p>Le <em>Physarum Polycephalum</em>, aussi connu sous le nom de Blob, est un être vivant unicellulaire qui permet aux scientifiques des avancées dans les laboratoires. Il ne craint ni le feu, ni l’eau mais il est sensible à la lumière. Il est presque immortel. Dans la nature, il se nourrit de champignons, de levures et d’autres blobs. Il cicatrise et referme sa membrane en seulement 2 minutes. Sans cerveau ni jambes, il se déplace, grandit jusqu’à 10 cm² et résout des problèmes.
+        </p>
+    </section>
+    
+    <section>
+        <br/>
+        <h3 class="scientifique">Nakagaki et Dussutour</h3>
+        <p>La scientifique Audrey Dussutour a prouvé par plusieurs expériences que selon d'où viennent les BLOBS, ils se comportent différemment. En effet, un blob australien se fait tuer par un blob américain et ignoré par un blob japonais, et 2 blobs australiens s'assemblent pour n'en former qu'un seul.
+        </p>
+        <p>Le régime alimentaire est aussi assez spécifique, alors que les blobs du laboratoire, australiens de Mme Dussutour se nourrissaient de flocons d'avoine bio, les blob américains ont refusé de les manger pour opter pour des flocons d'avoine de supermarché, plus gras et calorique.            
+        <br/><em>->Les blob suivraient-ils les clichés de la population ?</em>
+        </p>
+        <p>Mme Dussutour a aussi prouvé que le blob s'adapte et que 2 blobs peuvent se partager des informations et des capacités. Les blobs détestent le sel, et si au fur et à mesure qu'un blob est en contact avec celui-ci, il s'adapte et le supporte. Si ce blob qui s'est adapté au sel est en contact avec un blob non adapté, les 2 blobs seront adaptés au sel.
+        </p>
+        <p>Le blob laisse derrière lui une trace de mucus pour savoir s'il est déjà passé par là. Cependant, il ne différencie pas le mucus des tubes blob et du sien, et se retrouve perdu si toute la surface sur laquelle il est posé est recouverte de mucus. C'est ce qu'a prouvé cette scientifique aussi.
+        </p>
+        <p>
+        <br/><br/>Un autre scientifique de renom a aussi travaillé sur le blob et a reçu beaucoup de prix pour ses travaux : Toshiyuki Nakagaki.
+        </p>
+        <p>Ce scientifique a prouvé "l'esprit de logique" d'un blob. En effet, il a réussi à faire trouver la sortie d'un labyrinthe d'un blob, ou encore de lui faire faire les routes ferroviaires du Japon.
+        </p>
+        <p>Il a aussi réussi à prouver qu'un blob peut anticiper une action si elle se répète toujours à un intervalle de temps régulier.
+        </p>
+    </section>
+
+    <section>
+        <br/>
+        <h3 class="scientifique">L'ISS VS les E²</h3>
+        <p>Tandis que les scientifiques font des expériences complexes, nous en faisons des plus simples en classe, un miroir de celles à bord de l’ISS. Deux protocoles : exploitation et exploration, ont été mis en place pour observer le comportement des blobs en microgravité. L'intérêt des expériences faites par des élèves partout en France est d’avoir un grand nombre de résultats et d'élargir les connaissances de la population au sujet de ces êtres vivants incroyables.
+        </p>
+        <p>Le protocole exploration s’agit de laisser un blob seul, dans une boîte de pétri, à découvrir son environnement. Le protocole exploitation s’agit également d’un blob dans une boîte de pétri, mais cette fois-ci il a le droit à 4 flocons d’avoine, sa nourriture préférée.
+        </p>
+        <p>Nous avons pu voir, grâce aux résultats publiés par Audrey Dussutour, que la seule grande différence entre le développement des blobs sur l’ISS et sur Terre est que ceux dans la station spatiale ont évolué dans la troisième dimension, alors que sur Terre ils n'exploitent que la seconde.
+        </p>
+    </section>
+
+    <section>
+        <br/><br/>
+        <p class="conclusion">Cet être mystérieux peut permettre de nombreuses avancées scientifiques, c’est pour cela qu’il nous fascine tant. En somme, le Blob est un être intriguant, sans cerveau, qui est doté d’une certaine capacité d’apprentissage.
+        </p>
+    </section>
+
+    <section>
+        <br/>
+        <br/>
+        <p class="auteur">
+            Cet article a été rédigé par Clémentine Catalano, Elya Castaing et Abigael Walmsley
+        </p>
+    </section>
+
+        <div id="rub_is_visible">false</div>  <!--NE PAS TOUCHER, SERT POUR LE JS a DEFINIR SI LA DIV RUBRIQUE EST ACTIVEE-->
+
+
+        <img id ="topPage" src="../../Images/fleche.png" alt=""> 
+
+    <footer>
+        <br>
+       <table width=100% border=0 cellspacing=0 cellpadding=3>
+           <tr id="footerSouligne">
+                <td width=30%>
+                    
+Services Le Monde :<br/><br>
+
+Les ateliers du Monde<br/>
+Mémorable : travailler sa mémoire<br/>
+Mots croisés / Sudokus<br/>
+Résultats élections<br/>
+Education<br/>
+Gastronomie<br/>
+
+                </td>
+
+                <td width=30%>
+                    Services Le Monde :<br/><br>
+
+Les ateliers du Monde<br/>
+Mémorable : travailler sa mémoire<br/>
+Mots croisés / Sudokus<br/>
+Résultats élections<br/>
+Education<br/>
+Gastronomie<br/>
+                </td>
+
+                <td width=30%>
+                    Services Le Monde :<br/><br>
+
+Les ateliers du Monde<br/>
+Mémorable : travailler sa mémoire<br/>
+Mots croisés / Sudokus<br/>
+Résultats élections<br/>
+Education<br/>
+Gastronomie<br/>
+                </td>
+           </tr>
+
+
+    </footer>
+    <script src="../../app.js"></script>
+    
+</body>
+</html>
