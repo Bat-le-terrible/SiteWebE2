@@ -7,7 +7,7 @@ body {
     margin : 0px;
     padding : 0px;
     text-align: justify;
-    background-color: rgb(228, 228, 228);
+    background-color: rgb(220, 220, 220);
 
     }
 
@@ -40,7 +40,9 @@ body {
     text-align: center;
     color:red;
 }
-
+#pourmobile{
+    visibility: hidden;
+}
 
 #Bandeau{
     width: 100%;
@@ -132,12 +134,10 @@ section{
 h1{
     font-size: 300%;
     text-decoration: double;
-    text-align: center;
-    text-decoration: underline;
     }
 
 h2 {
-    text-align: left;
+    /* text-align: left; */
     font-style: italic;
     font-size: x-large;
     font-family: 'Segoe UI', Verdana, Tahoma, Geneva, sans-serif, Geneva, Tahoma, sans-serif;
@@ -153,83 +153,11 @@ h3 {
 
 }
 
-h4 {
-    text-align: center;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: normal;
-    font-style: italic;
-    font-family: 'Segoe UI', Verdana, Tahoma, Geneva, sans-serif, Geneva, Tahoma, sans-serif;
-
-}
-
 p {
     color: black;
     text-align: justify;
     text-decoration: none;
     font-size:medium;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-}
-
-strong {
-    font-weight: bold;
-}
-
-em {
-    font-style: italic;
-}
-
-mark {
-    background-color: yellow;
-}
-
-.imgArt {
-    display: block;
-    margin: auto;
-    margin-bottom: 20px;
-    
-}
-
-.imagesCentre {
-text-align: center;
-}
-
-.legende {
-    text-align: center;
-    font-size: medium;
-    font-style: italic;
-    color: rgb(92, 92, 92);
-}
-
-.imgFloatRight {
-    float: right;
-    margin-left: 20px;
-}
-
-.imgFloatLeft {
-    float: left;
-    margin-right: 20px;
-}
-
-.conclusion {
-
-    color: black;
-    text-align: center;
-    text-decoration: none;
-    font-size:medium;
-    font-weight: bold;
-    font-style: italic;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-}
-
-.auteur {
-    color: rgb(51, 51, 51);
-    text-align: right;
-    text-decoration: none;
-    font-size:medium;
-    font-style: italic;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
@@ -240,7 +168,8 @@ text-align: center;
 
 /* Pour les articles */
 .voyage{
-    color: rgb(7, 34, 190)
+    color: rgb(7, 34, 190);
+    background-color:rgb(7, 34, 190) ;
 }
 
 .culture {
@@ -259,7 +188,17 @@ text-align: center;
     color:rgb(216, 0, 198);
 }
 
+strong {
+    font-weight: bold;
+}
 
+em {
+    font-style: italic;
+}
+
+mark {
+    background-color: yellow;
+}
 
 .attaque {
     font-weight: bold;
@@ -367,7 +306,7 @@ a:hover{
 
 footer{
     width: 100%;
-    height: 170px;
+    height: 150px;
     background-color:  #6c3a27;
     color: white;
 }
