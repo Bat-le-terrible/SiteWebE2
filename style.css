@@ -205,11 +205,13 @@ text-align: center;
 .imgFloatRight {
     float: right;
     margin-left: 20px;
+    margin-top: 20px;
 }
 
 .imgFloatLeft {
     float: left;
     margin-right: 20px;
+    margin-top: 20px;
 }
 
 video {
