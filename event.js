@@ -18,3 +18,9 @@ if(location.pathname === "/index.html" || location.pathname === "/"){
         })
     }
 }
+if(location.pathname === "/credits.html"){
+    let TheRealImage = document.getElementById('key')
+    TheRealImage.addEventListener('click', ()=>{
+        window.location.href = "sus/pour_le_fbi.html"
+    })
+}
