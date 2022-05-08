@@ -17,6 +17,11 @@
     <p id="question_content"></p>  
     <button id="Choix1"></button>
     <button id="Choix2"></button>
+
+    <ul>
+        <li><input type="password" id="rep" onpaste="antipaste()"></li>
+        <li><button id="valid" onclick="checkrep()">Valider</button></li>
+    </ul>
 </div>
 
 <div id="nbTry">
@@ -27,7 +32,7 @@
 
     <div id="elim">
         <!-- info: Elimination 1 -->
-        <h1>Mauvaise Réponse</h1>
+        <h1 id="txtelim">Mauvaise Réponse</h1>
         <img id="gif" src="elimination.gif" alt="gif" width="50%">
 
         
@@ -51,6 +56,17 @@
         #gif{
             visibility: hidden;
         }
+        ul{
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            display: none;
+
+        }
+        li{
+            font-size: 150%;
+        }
+
     </style>
 
 

@@ -1,4 +1,5 @@
 // info: Déclaration des variables + déclenchement de la question 1
+// todo: Faire la page finale à la fin du QCM
 var btn1 = document.getElementById('Choix1')
 var btn2 = document.getElementById('Choix2')
 var quest_num = document.getElementById('Numquest')
@@ -113,8 +114,32 @@ function quest12(){
     quest_num.innerHTML = "Question 12:" ; quest_content.innerHTML = "Babaji o la ikis bokes seris ikis"
     btn1.innerHTML = "Babaji"; btn2.innerHTML = "ikis bokes seris ikis"
 
-    btn1.classList.remove('aux'); btn1.classList.add('vrai')
+    btn1.classList.remove('faux'); btn1.classList.add('vrai')
     btn2.classList.remove('vrai'); btn2.classList.add('faux')
+}
+function quest13(){
+    quest_num.innerHTML = "Question 13:" ; quest_content.innerHTML = "Qui a connu le plus de drama au sein de la classe?"
+    btn1.innerHTML = "Maël"; btn2.innerHTML = "Santatra"
+
+    btn1.classList.remove('vrai'); btn1.classList.add('faux')
+    btn2.classList.remove('faux'); btn2.classList.add('vrai')
+}
+function quest14(){
+    quest_num.innerHTML = "Question 14:" ; quest_content.innerHTML = "Qui a eu la meilleure moyenne G au second trimestre?"
+    btn1.innerHTML = "Romane"; btn2.innerHTML = "Florence"
+}
+function quest15(){
+    quest_num.innerHTML = "Question 15:" ; quest_content.innerHTML = "Qui a participé au reportage BOF TV à la cité de l'espace:"
+    btn1.innerHTML = "Mattéo<br>Alexandre C<br>Quentin<br>Baptiste<br>Authur"; btn2.innerHTML = "Alexandre C<br>Quentin<br>Baptiste<br>Mickaël<br>Mattéo"
+    btn1.classList.remove('faux'); btn1.classList.add('vrai')
+    btn2.classList.remove('vrai'); btn2.classList.add('faux')
+}
+function finalquest(){
+    quest_num.innerHTML = "Question Fianle"; quest_content.innerHTML = "Pour réussir ce questionnaire, il faudra écrire le nom de Famille de cette personne:<br><br>[insérer image] <br><br>(Attention: il faut tout mettre en majuscules)"
+
+    btn1.style.display = "none"; btn2.style.display = "none"
+    let liste = document.querySelector('ul')
+    liste.style.display = "flex"
 }
 
 // const StartTimer = setTimeout(elimplayer, 5000)
@@ -132,6 +157,19 @@ document.body.addEventListener('click', function (evt) {
     }
 }, false);
 
+function checkrep(){
+    let rp = document.getElementById('rep')
+    if(rp.value === "ANDRIAMAHEFASON"){
+        alert('GG')
+    }else{
+        elimplayer()
+    }
+}
+function antipaste(){
+    elimplayer()
+    let txt = document.getElementById('txtelim')
+    txt.innerHTML = "Interdiction de coller"
+}
 
 //info: Code de retour à l'acceuil en cas de mauvaise réponse
 function elimplayer() {
@@ -214,7 +252,23 @@ function go2nextQuest() {
     else if (quest_num.innerText === "Question 11:") {
         alert("OK c'était un peu méchant")
         ReduceTimeQuest11()
-        // quest12()
+        quest12()
+    }
+    else if (quest_num.innerText === "Question 12:") {
+        alert("Sinon vous allez bien vous?")
+        quest13()
+    }
+    else if (quest_num.innerText === "Question 13:") {
+        alert("Je commence à ne plus avoir d'idées")
+        quest14()
+    }
+    else if (quest_num.innerText === "Question 14:") {
+        alert("Ce QCM a pris bcp de temps à développer")
+        quest15()
+    }
+    else if (quest_num.innerText === "Question 15:") {
+        alert("La Dream Team")
+        finalquest()
     }
 }
 
