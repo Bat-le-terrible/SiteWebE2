@@ -205,6 +205,22 @@ div {
     text-align: center;
 }
 
+.choixArt {
+    background-color: rgb(212, 212, 212)
+}
+
+.txtArt {
+    text-align: left;
+    font-size: large;
+    font-weight: bold;
+}
+
+.txtEx {
+    font-weight: bold;
+    font-style: italic;
+    font-size: medium;
+}
+
 .legende {
     text-align: center;
     font-size: medium;
