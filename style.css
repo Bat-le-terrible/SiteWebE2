@@ -188,11 +188,21 @@ mark {
     display: block;
     margin: auto;
     margin-bottom: 20px;
-    
+}
+
+.imgArt2 {
+    margin: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 .imagesCentre {
 text-align: center;
+}
+
+div {
+    text-align: center;
 }
 
 .legende {
@@ -275,6 +285,10 @@ h5 {
 
 .scientifique {
     color:rgb(216, 0, 198);
+}
+
+.extras {
+    color:rgb(19, 153, 102);
 }
 
 
