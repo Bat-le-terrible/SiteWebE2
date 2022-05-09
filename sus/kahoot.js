@@ -141,8 +141,8 @@ function elimplayer() {
     let elim = document.getElementById('elim')
     let gif = document.getElementById('gif')
 
-    question.style.visibility = "hidden"
-    elim.style.visibility = "visible"
+    question.style.display = "none"
+    elim.style.display = "block"
 
 
     //* Exécution des sons et du retour à l'acceuil
@@ -153,11 +153,11 @@ function elimplayer() {
         gif.style.visibility = "visible"
         setTimeout(() => {
             window.location.href = "../index.html"
-        }, 5650);
+        }, 6650); //Valeur de départ : 5650
     })
 
     let showTry = document.getElementById('nbTry')
-    showTry.style.visibility = "hidden"
+    showTry.style.display = "none"
     Add1toCookie()
 }
 let playsound = function playsound() {
