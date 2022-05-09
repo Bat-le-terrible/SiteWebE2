@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+    <title>Yo</title>
+
+    <script>
+        if(navigator.userAgent.match (/iphone/i) || navigator.userAgent.match (/Android/i)){
+            console.log("Appareil détecté: Mobile ou tablette ")
+            document.write ('<link rel="stylesheet" href="../mobile_style.css">');
+        }else{
+                console.log("Appareil détecté: ordinateur");
+                document.write ('<link rel="stylesheet" href="../style.css">');
+            }
+    </script>
+</head>
+<body>
+    <header>
+        <div id="contenant">
+            <img id ="bg_header" src="../Images/wallpeper.jpeg" alt="image de fond"> 
+            <div class="titre_page">
+               Rubrique scientifique
+            </div>
+       </div>
+       
+        <nav id="Bandeau">
+
+            <ul class="actions">
+                <li><a href="index.html"><img id="logo" src="../Images/Logo_lycee.png" titre="Logo" alt="logo du lycée"></a></li>
+                <li><button class="btnact" onclick="window.location.href = '../index.html';">Accueil</button></li>
+                <li><button class="btnact" id="btnrub"> Rubriques ▼</button></li>
+                <li><button class="btnact" onclick="window.location.href = 'extras.html';">Les Extras</button></li>
+                <li><button class="btnact" onclick="window.location.href = '../credits.html';">L'équipe de rédaction</button></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <section>
+        <br>
+        <p><strong>Bienvenue dans la page des articles Scientifiques</strong>
+            <br/>
+            Dans cette page, vous aurez accès à tous les articles ayant un aspect scientifique, comme l'article sur le blob.
+            <br/><br/>
+            <em>Bonne lecture</em>
+        </p>
+    </section>
+    <section>
+
+        <br>
+            <h2>Choisissez votre article :</h2>
+
+            <table width=100% border=1 cellspacing=0 cellpadding=3>
+            <tr>
+                <td width="125px">
+                    <img src="images/blob_illus.jpg" alt="photo de Blob" width="125px">
+                    
+                </td>
+                
+                <td>
+                    <br/>
+                    <h2>Le Blob</h2>
+                    <h4>La vie unicellulaire prendra-t-elle le dessus ?</h4>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    
+                </td>
+                
+
+                <td>
+
+                </td>
+            </tr>
+
+
+
+
+        </table>
+        
+        
+
+            
+    </section>       
+    
+
+        <div id="test">
+                <button class = "rubriques" onclick="window.location.href = 'voyage.html';">Voyage</button> <br>
+                <button class = "rubriques" onclick="window.location.href = 'culture.html';">Culture</button><br>
+                <button class = "rubriques" onclick="window.location.href = 'actus.html';">Actualités</button><br>
+                <button class = "rubriques" onclick="window.location.href = 'sorties.html';">Sorties</button><br>
+                <button class = "rubriques" onclick="window.location.href = 'scientifique.html';">Scientifique</button>
+        </div>
+        <div id="rub_is_visible">false</div>  <!--NE PAS TOUCHER, SERT POUR LE JS a DEFINIR SI LA DIV RUBRIQUE EST ACTIVEE-->
+
+
+
+
+        <img id ="topPage" src="../Images/fleche.png" alt=""> 
+
+    <footer>
+        <br>
+       <table width=100% border=0 cellspacing=0 cellpadding=3>
+           <tr id="footerSouligne">
+                <td width=30%>
+                </td>
+
+                <td width=30%>
+                </td>
+
+                <td width=30%>
+                </td>
+           </tr>
+
+           <tr>
+                    <td>
+
+                    </td>
+
+                    <td>
+                    </td>
+
+                    <td>
+                    </td>
+            </tr>
+
+
+
+
+
+
+    </footer>
+    <script src="../app.js"></script>
+    
+</body>
+</html>

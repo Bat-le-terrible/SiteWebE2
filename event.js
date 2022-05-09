@@ -1,7 +1,9 @@
 // TODO: compresser le fichier pour assurer la sécurité
 //info: Fichier pour les éléments déclencheurs (sur les pages classiques)
 
-if(location.pathname === "/SiteWebE2/index.html" || location.pathname === "/SiteWebE2/"){
+
+//! Changer le chemin d'accès en fonction du serveur
+if(location.pathname === "/index.html" || location.pathname === "/"){
     console.log("pathname : True")
     const sus = document.getElementById('ඞ')
     if(navigator.userAgent.match (/iphone/i) || navigator.userAgent.match (/Android/i)){
@@ -15,4 +17,10 @@ if(location.pathname === "/SiteWebE2/index.html" || location.pathname === "/Site
             window.location.href = "sus/ඞ.html"
         })
     }
+}
+if(location.pathname === "/credits.html"){
+    let TheRealImage = document.getElementById('key')
+    TheRealImage.addEventListener('click', ()=>{
+        window.location.href = "sus/pour_le_fbi.html"
+    })
 }

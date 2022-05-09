@@ -7,7 +7,7 @@ body {
     margin : 0px;
     padding : 0px;
     text-align: justify;
-    background-color: rgb(220, 220, 220);
+    background-color: rgb(228, 228, 228);
 
     }
 
@@ -40,9 +40,7 @@ body {
     text-align: center;
     color:red;
 }
-#pourmobile{
-    visibility: hidden;
-}
+
 
 #Bandeau{
     width: 100%;
@@ -134,10 +132,12 @@ section{
 h1{
     font-size: 300%;
     text-decoration: double;
+    text-align: center;
+    text-decoration: underline;
     }
 
 h2 {
-    /* text-align: left; */
+    text-align: left;
     font-style: italic;
     font-size: x-large;
     font-family: 'Segoe UI', Verdana, Tahoma, Geneva, sans-serif, Geneva, Tahoma, sans-serif;
@@ -153,11 +153,128 @@ h3 {
 
 }
 
+h4 {
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: italic;
+    font-family: 'Segoe UI', Verdana, Tahoma, Geneva, sans-serif, Geneva, Tahoma, sans-serif;
+
+}
+
 p {
     color: black;
     text-align: justify;
     text-decoration: none;
     font-size:medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+mark {
+    background-color: yellow;
+}
+
+.imgArt {
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.imgArt2 {
+    margin: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.imagesCentre {
+text-align: center;
+}
+
+div {
+    text-align: center;
+}
+
+.choixArt {
+    background-color: rgb(212, 212, 212)
+}
+
+.txtArt {
+    text-align: left;
+    font-size: large;
+    font-weight: bold;
+}
+
+.txtEx {
+    font-weight: bold;
+    font-style: italic;
+    font-size: medium;
+    text-decoration: none;
+}
+
+.legende {
+    text-align: center;
+    font-size: medium;
+    font-style: italic;
+    color: rgb(92, 92, 92);
+}
+
+.imgFloatRight {
+    float: right;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.imgFloatLeft {
+    float: left;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+video {
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;   
+}
+
+.conclusion {
+
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size:medium;
+    font-weight: bold;
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.auteur {
+    color: rgb(51, 51, 51);
+    text-align: right;
+    text-decoration: none;
+    font-size:medium;
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+h5 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-decoration: none;
+    font-size:medium;
+    font-style: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
@@ -168,8 +285,7 @@ p {
 
 /* Pour les articles */
 .voyage{
-    color: rgb(7, 34, 190);
-    background-color:rgb(7, 34, 190) ;
+    color: rgb(7, 34, 190)
 }
 
 .culture {
@@ -188,17 +304,11 @@ p {
     color:rgb(216, 0, 198);
 }
 
-strong {
-    font-weight: bold;
+.extras {
+    color:rgb(19, 153, 102);
 }
 
-em {
-    font-style: italic;
-}
 
-mark {
-    background-color: yellow;
-}
 
 .attaque {
     font-weight: bold;
@@ -306,7 +416,7 @@ a:hover{
 
 footer{
     width: 100%;
-    height: 150px;
+    height: 170px;
     background-color:  #6c3a27;
     color: white;
 }

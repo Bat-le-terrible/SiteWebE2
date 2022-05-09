@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+    <title>Yo</title>
+
+    <script>
+        if(navigator.userAgent.match (/iphone/i) || navigator.userAgent.match (/Android/i)){
+            console.log("Appareil détecté: Mobile ou tablette ")
+            document.write ('<link rel="stylesheet" href="../../mobile_style.css">');
+        }else{
+                console.log("Appareil détecté: ordinateur");
+                document.write ('<link rel="stylesheet" href="../../style.css">');
+            }
+    </script>
+</head>
+
+
+
+<body>
+    <header>
+        <div id="contenant">
+            <img id ="bg_header" src="../../Images/wallpeper.jpeg" alt="image de fond"> 
+            <div class="titre_page">
+               Rubrique scientifique
+            </div>
+       </div>
+       
+        <nav id="Bandeau">
+
+            <ul class="actions">
+                <li><a href="../../index.html"><img id="logo" src="../../Images/Logo_lycee.png" titre="Logo" alt="logo du lycée"></a></li>
+                <li><button class="btnact" onclick="window.location.href = '../../index.html';">Accueil</button></li>
+                <li><button class="btnact" id="btnrub"> Rubriques ▼</button></li>
+                <li><button class="btnact" onclick="window.location.href = '../extras.html';">Les Extras</button></li>
+                <li><button class="btnact" onclick="window.location.href = '../../credits.html';">L'équipe de rédaction</button></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div id="test">
+        <button class = "rubriques" onclick="window.location.href = '../voyage.html';">Voyage</button> <br>
+        <button class = "rubriques" onclick="window.location.href = '../culture.html';">Culture</button><br>
+        <button class = "rubriques" onclick="window.location.href = '../actus.html';">Actualités</button><br>
+        <button class = "rubriques" onclick="window.location.href = '../sorties.html';">Sorties</button><br>
+        <button class = "rubriques" onclick="window.location.href = '../scientifique.html';">Scientifique</button>
+    </div>
+
+    <section>
+        <h1 class="scientifique">Le TBL, ou le Spectropolarimètre</h1>
+        <p class="attaque">À la recherche de la vie extraterrestre</em></p>
+
+        <p>Pendant notre voyage au Pic du Midi, nous avons pu voir le TBL : le Télescope Bernard Lyot, qui possède un instrument tellement rare qu’il n’en existe que deux exactement comme cela au monde, ils ont été fabriqués à Toulouse par l’IRAP-OMP : ces instruments sont des spectropolarimètres.<em> De quoi s’agit-il ?</em>
+        </p>
+        <br/>
+        <img class="imgArt" src="../images/TBL.png" width="100%">
+        <h4>Rédaction par Abigael Walmsley</h4>
+    </section>
+    
+    <section>
+        <br/>
+        <h3 class="scientifique">La partie spectro</h3>
+        <p>Nous nous intéressons ici au spectre d’une source de lumière : une étoile, par exemple. Le spectre des étoiles est l'ensemble des bandes du spectre électromagnétique émis par cette dernière. C’est en somme l’arc -en-ciel des étoiles ; où chaque “couleur” représente un élément chimique.  Un spectromètre, ou plutôt spectrographe, est un appareil séparant les différentes parties du spectre. Avec cela, nous pouvons voir ce qui est appelé le spectre d’absorption de l’étoile, qui laisse des bandes noires sur le spectre d’émission, permettant de connaître la composition chimique de l’astre.
+        </p>
+    </section>
+
+    <section>
+        <br/>
+        <h3 class="scientifique">La partie polarimètre</h3>
+        <p>La polarisation est la direction de vibration de la lumière. La lumière possède la dualité onde-matière : elle est en même temps une particule (photon) et une onde (électromagnétique). Ici, ce sont les caractéristiques ondulatoires de la lumière qui influent. En tant qu’onde EM, elle se propage en ligne droite en créant un champ électrique et magnétique, qui vibre perpendiculairement par rapport à la direction de déplacement de l’onde. La polarisation est un cas particulier de cette propriété, l’onde “vibre” dans un sens précis, ceci peut par exemple se produire lors d’un impact de la lumière à un certain angle avec un matériel différent de celui composant son milieu de propagation. 
+        </p>
+    </section>
+
+    <section>
+        <br/>
+        <h3 class="scientifique">Le spectropolarimètre, à quoi ça sert ?</h3>
+        <p>Le spectropolarimètre du Pic du Midi a trois buts : la détection d’exoplanètes, la compréhension des derniers stades de l’évolution d’un système stellaire et l’étude, plus classique, du champ magnétique des étoiles. La façon dont les astronomes découvrent de nouvelles exoplanètes grâce à cette technique est d’intérêt particulier. Ils peuvent utiliser la spectrographie, pour voir un changement du spectre d’émission attendu d’une étoile, avec des éléments inattendus. Ils peuvent également utiliser la polarisation de la lumière de l’étoile : avec celle-ci, ils peuvent retrouver le centre de gravité de l’étoile et le point autour duquel elle gravite. Si les deux sont les mêmes, il est peu probable d’y trouver une exoplanète. Or, si le centre de gravité et le point autour duquel l’étoile gravite ne sont pas tout à fait les mêmes, l’investigation se poursuit. Il se pourrait que ladite étoile n’est pas en révolution autour de son centre de gravité car une exoplanète l’attire légèrement vers elle ! L’utilisation de ces deux techniques combinées dans un seul instrument augmente la précision des mesures et des probabilités de découvertes.
+        </p>
+        <div class="imagesCentre">
+            <img src="../images/Spectro2.jpg" alt="vue à l'intérieur du TBL" height="250px">
+            <img src="../images/Spectro1.jpg" alt="vue à l'intérieur du TBL" height="250px">
+            <p class="legende">Photos prises à l'intérieur du TBL, vue directe sur le spectropolarimètre </p>
+        </div>
+    
+    </section>
+
+    <section>
+        <br/><br/>
+        <p class="conclusion">Le spectropolarimètre se trouvant sur le TBL au Pic du Midi aujourd’hui travaille dans le spectre visible de la lumière. Or, pour étudier ces étoiles plus en détail, ainsi que des étoiles plus éloignées (effet Doppler), l’infrarouge est d’une grande utilité. Dans ce but, SPIRou (SpectroPolarimètre InfraRouge) sera bientôt installé en tandem avec le spectropolarimètre déjà là-haut et un compagnon se trouvera à Hawaii, sur le CFHT (Canada-France-Hawaii Telescope). Que découvriront-ils?</p>
+    </section>
+
+    <section>
+        <br/>
+        <br/>
+        <p class="auteur">
+            Cet article a été rédigé par Abigael Walmsley
+        </p>
+    </section>
+
+    
+        <div id="test">
+                <button class = "rubriques" onclick="window.location.href = 'voyage.html';">Voyage</button> <br>
+                <button class = "rubriques" onclick="window.location.href = 'culture.html';">Culture</button><br>
+                <button class = "rubriques" onclick="window.location.href = 'actus.html';">Actualités</button><br>
+                <button class = "rubriques" onclick="window.location.href = 'sorties.html';">Sorties</button><br>
+                <button class = "rubriques" onclick="window.location.href = 'scientifique.html';">Scientifique</button>
+        </div>
+
+        <div id="rub_is_visible">false</div>  <!--NE PAS TOUCHER, SERT POUR LE JS a DEFINIR SI LA DIV RUBRIQUE EST ACTIVEE-->
+
+
+        <img id ="topPage" src="../../Images/fleche.png" alt=""> 
+
+    <footer>
+        <br>
+       <table width=100% border=0 cellspacing=0 cellpadding=3>
+           <tr id="footerSouligne">
+                <td width=30%>
+                    
+Services Le Monde :<br/><br>
+
+Les ateliers du Monde<br/>
+Mémorable : travailler sa mémoire<br/>
+Mots croisés / Sudokus<br/>
+Résultats élections<br/>
+Education<br/>
+Gastronomie<br/>
+
+                </td>
+
+                <td width=30%>
+                    Services Le Monde :<br/><br>
+
+Les ateliers du Monde<br/>
+Mémorable : travailler sa mémoire<br/>
+Mots croisés / Sudokus<br/>
+Résultats élections<br/>
+Education<br/>
+Gastronomie<br/>
+                </td>
+
+                <td width=30%>
+                    Services Le Monde :<br/><br>
+
+Les ateliers du Monde<br/>
+Mémorable : travailler sa mémoire<br/>
+Mots croisés / Sudokus<br/>
+Résultats élections<br/>
+Education<br/>
+Gastronomie<br/>
+                </td>
+           </tr>
+
+
+    </footer>
+    <script src="../../app.js"></script>
+    
+</body>
+</html>
