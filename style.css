@@ -40,6 +40,9 @@ body {
     text-align: center;
     color:red;
 }
+#pourmobile{
+    display: none;
+}
 
 
 #Bandeau{
@@ -284,6 +287,9 @@ h5 {
 
 
 /* Pour les articles */
+#rub_index{
+    text-align: center;
+}
 .voyage{
     color: rgb(7, 34, 190)
 }
