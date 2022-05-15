@@ -244,6 +244,18 @@ div {
     margin-top: 20px;
 }
 
+.imgCreditDroit {
+    float: right;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+
+.imgCreditGauche {
+    float: left;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
 video {
     display: block;
     margin: auto;
@@ -280,6 +292,14 @@ h5 {
     font-style: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 
+}
+
+.creditDroit {
+    text-align: right;
+}
+
+.creditGauche {
+    text-align: left;
 }
 
 
