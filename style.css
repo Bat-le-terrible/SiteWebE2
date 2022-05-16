@@ -212,6 +212,10 @@ div {
     background-color: rgb(212, 212, 212)
 }
 
+.choixArtCult {
+    background-color: rgba(216, 174, 174, 0.253)
+}
+
 .txtArt {
     text-align: left;
     font-size: large;
