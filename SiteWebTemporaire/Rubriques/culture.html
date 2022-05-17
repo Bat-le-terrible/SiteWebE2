@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+    <title>Rubrique culturelle</title>
+
+    <script>
+        if(navigator.userAgent.match (/iphone/i) || navigator.userAgent.match (/Android/i)){
+            console.log("Appareil détecté: Mobile ou tablette ")
+            document.write ('<link rel="stylesheet" href="../../mobile_style.css">');
+        }else{
+                console.log("Appareil détecté: ordinateur");
+                document.write ('<link rel="stylesheet" href="../../style.css">');
+            }
+    </script>
+</head>
+
+
+
+<body>
+    <header>
+        <div id="contenant">
+            <img id ="bg_header" src="../../Images/wallpeper.jpeg" alt="image de fond"> 
+            <div class="titre_page">
+               Rubrique culturelle
+            </div>
+       </div>
+       
+        <nav id="Bandeau">
+
+            <ul class="actions">
+                <li><a href="../../index.html"><img id="logo" src="../../Images/Logo_lycee.png" titre="Logo" alt="logo du lycée"></a></li>
+                <li><button class="btnact" onclick="window.location.href = '../index.html';">Accueil</button></li>
+                <li><button class="btnact" id="btnrub"> Rubriques ▼</button></li>
+                <li><button class="btnact" onclick="window.location.href = 'extras.html';">Les Extras</button></li>
+                <li><button class="btnact" onclick="window.location.href = '../../credits.html';">L'équipe de rédaction</button></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div id="test">
+        <button class = "rubriques" onclick="window.location.href = './culture.html';">Culture</button><br>
+        <button class = "rubriques" onclick="window.location.href = './sorties.html';">Sorties</button><br>
+        <button class = "rubriques" onclick="window.location.href = './scientifique.html';">Scientifique</button>
+    </div>
+
+
+<!-- .../ -->
+    <section>
+        <h2 class="culture">À propos de la rubrique culture</h2>
+    </section>
+
+    <section>
+        <p>Sur cette page, vous pourrez trouver tous les articles ayant un lien avec la <strong>culture</strong>. Vous pourrez par exemple consulter un article sur <a href="culture_articles/OdysseeDeLespace.html">2001 l'Odyssée de l'espace</a>, un chef d'oeuvre de Stanley Kurbrick. La majorité de ces articles sont en rapport avec des films, ou avec des faits historiques.</p>
+    </section>
+
+    <section>
+        <br/>
+        <h2 class="culture">Les articles :</h2>
+        <table width=100% border=0 cellspacing=0 cellpadding=10>
+            <tr class="choixArtCult">
+                <td width="80px">
+                    <a href="culture_articles/astronomes.html"><img src="images/Astronomes_intro.jpg"  height="80px"></a>
+                </td>
+
+                <td>
+                    <a href="culture_articles/astronomes.html"><p class="txtArt">Ces astronomes qui ont marqué l'Histoire</p></a>
+                    <p class="txtEx">Nicolas Copernic est né le 19 février 1473 en Prusse Royale, l’ancien Royaume de Pologne. Connu principalement pour ses travaux en tant qu’astronome et mathématicien, il est aussi...</p>
+                    
+                </td>
+            </tr>
+            <tr><td></td><td></td></tr>
+
+            <tr class="choixArtCult">
+                <td width="80px">
+                    <a href="culture_articles/EthiqueSpatial.html"><img src="images/RocketLaunch.jpg"  height="80px"></a>
+                </td>
+
+                <td>
+                    <a href="culture_articles/EthiqueSpatial.html"><p class="txtArt">Quel avenir pour la conscience dans le spatial ?</p></a>
+                    <p class="txtEx">L’espace a depuis toujours fasciné l’humanité mais connaissez-vous l’Histoire et les enjeux passés de la conquête spatiale ? Quels seront ceux d‘aujourd’hui et de demain ?</p>
+                    
+                </td>
+            </tr>
+            <tr><td></td><td></td></tr>
+
+            <tr class="choixArtCult">
+                <td width="80px">
+                    <a href="culture_articles/Gravity.html"><img src="images/SeulSurMars.jpg"  height="100px"></a>
+                </td>
+
+                <td>
+                    <a href="culture_articles/Gravity.html"><p class="txtArt">Gravity et Seul sur Mars</p></a>
+                    <p class="txtEx">Seul sur Mars « The Martian” est à l’origine un roman de science-fiction écrit par l’auteur américain Andy Weir en 2011. Lors d'une expédition sur Mars...</p>
+                    
+                </td>
+            </tr>
+            <tr><td></td><td></td></tr>
+
+            <tr class="choixArtCult">
+                <td width="80px">
+                    <a href="culture_articles/GuerreFroide.html"><img src="images/RocketLaunch2.jpg"  height="100px"></a>
+                </td>
+
+                <td>
+                    <a href="culture_articles/GuerreFroide.html"><p class="txtArt">Etats-Unis/URSS : la conquête de la Lune</p></a>
+                    <p class="txtEx">Durant la guerre froide, de 1947 à 1991, les Etats Unis et l'URSS s’affrontent dans de nombreux domaines : scientifiques, militaires, et culturels. Grâce aux nouvelles technologies... </p>
+                    
+                </td>
+            </tr>
+            <tr><td></td><td></td></tr>
+
+            <tr class="choixArtCult">
+                <td width="80px">
+                    <a href="culture_articles/OdysseeDeLespace.html"><img src="images/2001SpaceOd.jpg"  height="80px"></a>
+                </td>
+
+                <td>
+                    <a href="culture_articles/OdysseeDeLespace.html"><p class="txtArt">2001 : l'Odyssée de l'Espace</p></a>
+                    <p class="txtEx">Stanley Kubrick est un réalisateur de renommée mondiale. Auteur de talent des très célèbres <em>Shining</em> et <em>Full Metal Jacket</em>, il surprend encore une fois son public en sortant un film à la fois...
+                    </p>
+                    
+                </td>
+            </tr>
+            <tr><td></td><td></td></tr>
+
+            <tr class="choixArtCult">
+                <td width="80px">
+                    <a href="culture_articles/OubliesSpatial.html"><img src="images/Sergey_Korolyov.jpg"  height="80px"></a>
+                </td>
+
+                <td>
+                    <a href="culture_articles/OubliesSpatial.html"><p class="txtArt">Les oubliés du spatial</p></a>
+                    <p class="txtEx">Certains inventeurs, ingénieurs ou mathématiciens oeuvrant dans le spatial sont à la source de nombreuses avancées techniques et technologiques. Et pourtant, leurs noms ont été rayés des livres d'histoire. Venez...
+                    </p>
+                    
+                </td>
+            </tr>
+            <tr><td></td><td></td></tr>
+        </table>
+    </section>
+
+
+
+        <div id="rub_is_visible">false</div>  <!--NE PAS TOUCHER, SERT POUR LE JS a DEFINIR SI LA DIV RUBRIQUE EST ACTIVEE-->
+
+
+        <img id ="topPage" src="../../Images/fleche.png" alt=""> 
+
+    <footer>
+        <br>
+       <table width=100% border=0 cellspacing=0 cellpadding=3 class="FondMarron">
+           <tr id="footerSouligne">
+                <td width=30%>
+                <h4 class="footerTitre">Informations générales :</h4>
+                <p class="footerInfo">Lycée Pierre Paul Riquet               
+                    <br/>2 Avenue du Lycée, 31650 Saint-Orens-de-Gameville
+                    <br/><a href="tel:+33561001010"> 05.61.00.10.10 </a>
+                    <br/><a href="mailto::0312289v@ac-toulouse.fr?subject=Titre&body=Site web journal E²">0312289v@ac-toulouse.fr</a>
+                    
+                </p>
+
+                </td>
+
+                <td width=30%>
+                    <h4 class="footerTitre">Retrouvez nous sur les réseaux sociaux :</h4>
+                    <p class="footerInfo">
+                        <center>
+                        <a href="https://www.instagram.com/ppr_lycee/" target="_blank"><img src="images/Instagram_icon.png.webp" height="50px"></a>
+                        <a href="https://pierre-paul-riquet.mon-ent-occitanie.fr"target="_blank"><img src="images/logo_occitanie.png" height="50px"></a>
+                        <a href="https://www.youtube.com/channel/UCx279O2nybQMq-FEtrhPSKQ"target="_blank"><img src="images/logoYT.png" height="50px"></a>
+                        </center>
+                    </p>
+                </td>
+
+                <td width=30%>
+                    <h4 class="footerTitre">Informations des créateurs :</h4>
+                    <p class="footerInfo">Baptiste GOUDET                
+                        <br/>Mattéo GOSSELIN 
+                        <br/>(élèves en classe de E²)
+                        <br/><br/>Envoyez nous un message sur :
+                        <br/><a href="mailto::boftvofficiel@gmail.com?subject=Titre&body=Site web journal E²">boftvofficiel@gmail.com</a>
+                        
+                    </p>
+    
+                </td>
+           </tr>
+
+
+    </footer>
+    <script src="../app.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!-- ! QCM : Enigme 3 -->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>???</title>
+</head>
+<body>
+
+<div id="question">
+    <h1 >Enigme 3</h1>
+    <br><br>
+    <h2>Félicitations, tu es arrivé jusqu'a la dernière enigme! <br></h2>
+    <p id="Numquest"></p>  <br>
+    <p id="question_content"></p>  
+    <button id="Choix1"></button>
+    <button id="Choix2"></button>
+
+    <ul>
+        <li><input type="password" id="rep" onpaste="antipaste()"></li>
+        <li><button id="valid" onclick="checkrep()">Valider</button></li>
+    </ul>
+</div>
+
+<div id="nbTry">
+
+</div>
+
+
+
+    <div id="elim">
+        <!-- info: Elimination 1 -->
+        <h1 id="txtelim">Mauvaise Réponse</h1>
+        <img id="gif" src="elimination.gif" alt="gif" width="50%">
+
+        <!-- <audio controls id="test">
+            <source src="rick.mp3" type="audio/mp3">
+        </audio> -->
+        
+    </div>
+    <style>
+
+
+        #elim{
+            /* top:0px;
+            position: fixed; */
+            text-align: center;
+            margin: 0 auto;
+            width: 100%;
+            display: none;
+
+        }
+        #question{
+            /* display: flex; */
+            text-align: center;
+        }
+        #gif{
+            visibility: hidden;
+        }
+        ul{
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            display: none;
+
+        }
+        li{
+            font-size: 150%;
+        }
+
+    </style>
+
+
+    <script src="kahoot.js"></script>
+</body>
+</html>
