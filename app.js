@@ -104,7 +104,14 @@ btnrub.addEventListener("click", () =>{
 // if(navigator.userAgent.indexOf("Opera")){
 //     alert('opera est utilisé')
 // }
+//Espace pour aérer les mobiles
 
+if (navigator.userAgent.match(/iphone/i) || navigator.userAgent.match(/Android/i)) {}else{
+    let espace = document.getElementById('br_mobile')
+    if(espace){
+        espace.style.display = "none"
+    }
+ }
 
 
 
