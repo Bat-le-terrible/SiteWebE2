@@ -334,26 +334,24 @@ h5 {
 }
 .voyage{
     color: rgb(7, 34, 190)
+    font-family: "Bradley Hand", cursive;
+    text-decoration: none;
 }
 
 .culture {
     color:rgb(190, 7, 7);
-}
-
-.sorties {
-    color:rgb(25, 133, 3);
-}
-
-.actualité {
-    color:rgb(126, 5, 163);
+    font-family: "Bradley Hand", cursive;
+    text-decoration: none;
 }
 
 .scientifique {
-    color:rgb(216, 0, 198);
+    color:rgb(18, 128, 68);
+    font-family: "Bradley Hand", cursive;
+    text-decoration: none;
 }
 
 .extras {
-    color:rgb(19, 153, 102);
+    color:rgb(19, 144, 153);
     font-family: "Bradley Hand", cursive;
     text-decoration: none;
 }
