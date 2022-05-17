@@ -92,7 +92,7 @@ button:hover{
 #test{
     background: rgb(30,30,30);
     width: 20%;
-    height:180px;
+    height:220px;
     text-align: center;
     font-size: 200%;
     right: 455px;
@@ -165,7 +165,47 @@ p {
 }
 
 
+footer{
+    width: 100%;
+    height: 300px;
+    background-color:  #6c3a27;
+    color: white;
+}
+.footerTitre {
+    text-align: left;
+    color: white;
+    text-decoration: underline;
+    font-size: 20px;
+}
 
+.footerInfo{
+text-align: left;
+color: white;
+text-decoration: none;
+font-size: 14px;
+}
+
+
+.choixArt {
+    background-color: rgb(212, 212, 212)
+}
+
+.choixArtCult {
+    background-color: rgba(216, 174, 174, 0.253)
+}
+
+.txtArt {
+    text-align: left;
+    font-size: large;
+    font-weight: bold;
+}
+
+.txtEx {
+    font-weight: bold;
+    font-style: italic;
+    font-size: medium;
+    text-decoration: none;
+}
 
 
 /* Pour les articles */
@@ -213,7 +253,10 @@ mark {
 
 
 
+td{
 
+    padding-right: 30px;
+}
 
 
 
