@@ -1,28 +1,31 @@
+:root{
+    /* Créer des variables */
+    --couleur-orange: rgb(255,165,0)
+}
+
 body {
     margin : 0px;
     padding : 0px;
     text-align: justify;
-    background-color: rgb(220, 220, 220);
-    scrollbar-width: none;
+    background-color: rgb(228, 228, 228);
+
     }
 
 #logo{
     position: absolute;
     top: 17px;
     left: 13px;
-    height: 80px;
-    width: 140px;
+    height: 40px;
+    width: 70px;
 }
 /* Haut de page */
 #bg_header{
     width: 100%;
     z-index: 1;
-    top:80px;
 
 }
 .titre_page{
-
-    color: white;
+    color: rgb(253, 253, 253);
     font-size: 80px;
     font-weight: bold;
     position: absolute;
@@ -36,29 +39,26 @@ body {
     position: relative;
     text-align: center;
     color:red;
-    top:80px;
-
 }
 #pourmobile{
-    color:orange;
+    display: none;
 }
+
 
 #Bandeau{
     width: 100%;
-    /* height: 100px; */
-    background: rgb(30,30,30);  /*A régler sur transparent et ajouter la couleur au scroll (js)*/
+    height: 65px;
+    background: transparent;  /*A régler sur transparent et ajouter la couleur au scroll (js)*/
     z-index: 2;
     position: fixed;
     top:-10px;
     left:0px;
     transition: all 0.3s ease-out;  /*Pour l'animation (fondu sur 0.3 sec*/
 }
-#Bandeau:hover{
-    background: rgb(30,30,30);
-}
+
 /* Bouttons du bandeau */
 .actions{
-    margin-top: 38px;
+    margin-top: 23px;
     list-style-type: none;  /*retire les points devant chaque objet "item"*/
     display: flex;          /*Aligne les objets*/
     justify-content: right;
@@ -68,8 +68,9 @@ body {
     color: white;
     background-color: transparent;
     border-color: transparent;
-    font-size: 170%;
+    font-size: 130%;
     margin: 0 10px;
+    text-shadow: 2px 1px black;
 }
 button:hover{
     text-decoration: underline;
@@ -91,22 +92,18 @@ button:hover{
 /*Test*/
 #test{
     background: rgb(30,30,30);
-    width: 20%;
-    height:220px;
+    width: 150px;
+    height:75px;
     text-align: center;
-    font-size: 200%;
-    right: 455px;
+    right: 370px;
     position: fixed;
-    top: 86px;
+    top: 55px;
     visibility: hidden;
         
 }
 #rub_is_visible{
     color: rgb(220, 220, 220);
-
-
 }
-
 
 /* Boutton haut de page */
 #topPage{
@@ -138,10 +135,12 @@ section{
 h1{
     font-size: 300%;
     text-decoration: double;
+    text-align: center;
+    text-decoration: underline;
     }
 
 h2 {
-    /* text-align: left; */
+    text-align: left;
     font-style: italic;
     font-size: x-large;
     font-family: 'Segoe UI', Verdana, Tahoma, Geneva, sans-serif, Geneva, Tahoma, sans-serif;
@@ -157,6 +156,16 @@ h3 {
 
 }
 
+h4 {
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: italic;
+    font-family: 'Segoe UI', Verdana, Tahoma, Geneva, sans-serif, Geneva, Tahoma, sans-serif;
+
+}
+
 p {
     color: black;
     text-align: justify;
@@ -166,13 +175,43 @@ p {
 
 }
 
-
-footer{
-    width: 100%;
-    height: 300px;
-    background-color:  #6c3a27;
-    color: white;
+strong {
+    font-weight: bold;
 }
+
+em {
+    font-style: italic;
+}
+
+mark {
+    background-color: yellow;
+}
+
+.imgArt {
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.imgArt2 {
+    margin: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.imagesCentre {
+text-align: center;
+}
+
+div {
+    text-align: center;
+}
+
+.FondMarron {
+    background-color: #6c3a27;
+}
+
 .footerTitre {
     text-align: left;
     color: white;
@@ -184,9 +223,8 @@ footer{
 text-align: left;
 color: white;
 text-decoration: none;
-font-size: 14px;
+font-size: 12px;
 }
-
 
 .choixArt {
     background-color: rgb(212, 212, 212)
@@ -209,40 +247,116 @@ font-size: 14px;
     text-decoration: none;
 }
 
+.legende {
+    text-align: center;
+    font-size: medium;
+    font-style: italic;
+    color: rgb(92, 92, 92);
+}
+
+.imgFloatRight {
+    float: right;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.imgFloatLeft {
+    float: left;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.imgCreditDroit {
+    float: right;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+
+.imgCreditGauche {
+    float: left;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+video {
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;   
+}
+
+.conclusion {
+
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size:medium;
+    font-weight: bold;
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.auteur {
+    color: rgb(51, 51, 51);
+    text-align: right;
+    text-decoration: none;
+    font-size:medium;
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+h5 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-decoration: none;
+    font-size:medium;
+    font-style: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.creditDroit {
+    text-align: right;
+}
+
+.creditGauche {
+    text-align: left;
+}
+
+
+
+
 
 /* Pour les articles */
+#rub_index{
+    text-align: center;
+}
 .voyage{
     color: rgb(7, 34, 190);
-    background-color:rgb(7, 34, 190) ;
+    font-family: "Bradley Hand", cursive;
+    text-decoration: none;
 }
 
 .culture {
     color:rgb(190, 7, 7);
-}
-
-.sorties {
-    color:rgb(25, 133, 3);
-}
-
-.actualité {
-    color:rgb(126, 5, 163);
+    font-family: "Bradley Hand", cursive;
+    text-decoration: none;
 }
 
 .scientifique {
-    color:rgb(216, 0, 198);
+    color:rgb(18, 128, 68);
+    font-family: "Bradley Hand", cursive;
+    text-decoration: none;
 }
 
-strong {
-    font-weight: bold;
+.extras {
+    color:rgb(19, 144, 153);
+    font-family: "Bradley Hand", cursive;
+    text-decoration: none;
 }
 
-em {
-    font-style: italic;
-}
 
-mark {
-    background-color: yellow;
-}
 
 .attaque {
     font-weight: bold;
@@ -252,13 +366,12 @@ mark {
     text-align: center;
     margin: 60px;
 }
-
-
-
-td{
-
-    padding-right: 30px;
+#edito{
+    font-size: 105%;
 }
+
+
+
 
 
 
@@ -270,18 +383,17 @@ td{
 #choix_rubriques{
     text-align: center;
     justify-content: center;
-    margin:10%;
+    margin: 5%;
 }
 .btnrub{
     color: white;
     border-radius: 10px;
     font-size: 160%;
     margin: 0 15px;
-    padding: 15px;    
+    padding: 15px;  
+    box-shadow: 2px 2px black;  
 }
-/* .btnrub:hover{
-    font-size: 200%;
-} */
+
 #btn1{
     background-color:rgb(7, 34, 190) ;
     border-color: rgb(7, 34, 190);
@@ -295,13 +407,126 @@ td{
     border-color: rgb(126, 5, 163);
 }
 #btn4{
-    background-color:rgb(25, 133, 3) ;
-    border-color:rgb(25, 133, 3);
+    background-color:var(--couleur-orange) ;
+    border-color: var(--couleur-orange);
 }
 #btn5{
-    background-color: rgb(216, 0, 198);
-    border-color: rgb(216, 0, 198);
+    background-color: rgb(18, 128, 68);
+    border-color: rgb(18, 128, 68);
 }
 #btn6{
     color: black;
+}
+
+
+
+
+
+/* Equipe rédac tableau */
+td{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+/* Sado mazo land */
+/* #menu2{
+    list-style-type: none;
+    background-color: transparent;
+}
+#menu2::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+a{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid transparent; 
+    padding: 10px 0px;
+    text-align: center;
+}
+a:hover{
+    text-decoration: underline;
+}
+.sous{
+    display: none;
+    background-color: rgb(30,30,30);
+    position: absolute;
+    width: 9%;
+
+}
+#menu2 li:hover .sous{
+    display: block;
+}
+.sous li{
+    float: none;
+    width: 100%;
+} */
+
+footer{
+    width: 100%;
+    height: 170px;
+    background-color:  #6c3a27;
+    color: white;
+}
+
+table{
+    text-align: center;
+}
+
+
+#ඞ{
+    color: #6c3a27;
+}
+
+
+/*ça t'y touches pas baptiste c'est un peu galère*/
+
+
+.slider-container {
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+    height: 500px;
+    overflow: hidden;
+}
+.menu {
+    position: absolute;
+    left: 0;
+    z-index: 11;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+}
+.menu label {
+    cursor: pointer;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #ccc;
+    border-radius: 50px;
+    margin: 0 0.2em 1em;
+}
+.menu label:hover,.menu label:focus {
+    background: #1c87c9;
+}
+.slide-input{
+    opacity: 0;
+}
+.slide-img {
+    width: 100%;
+    height: 450px;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 10;
+    transition: left 0s 0.75s;
+}
+[id^="slide"]:checked + .slide-img {
+    left: 0;
+    z-index: 100;
+    transition: left 0.65s ease-out;
 }
