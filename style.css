@@ -243,8 +243,16 @@ font-size: 12px;
     background-color: rgba(216, 174, 174, 0.253)
 }
 
+.choixArtScien {
+    background-color: rgba(143, 187, 141, 0.253)
+}
+
 .choixArtExtra {
     background-color: rgba(140, 166, 187, 0.253)
+}
+
+.choixArtVoyage {
+    background-color: rgba(150, 140, 187, 0.253)
 }
 
 .txtArt {
