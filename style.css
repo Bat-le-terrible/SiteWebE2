@@ -520,9 +520,10 @@ table{
 
 
 #ඞ{
-    color: #6c3a27;
+    color: rgb(200, 200, 200);
+    text-align: right;
+    margin-right: 5%;
 }
-
 
 /*ça t'y touches pas baptiste c'est un peu galère*/
 
