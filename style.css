@@ -452,20 +452,15 @@ h5 {
     border-color: rgb(190, 7, 7);
 }
 #btn3{
-    background-color:rgb(126, 5, 163) ;
-    border-color: rgb(126, 5, 163);
+    background-color:rgb(19, 144, 153) ;
+    border-color: rgb(19, 144, 153);
 }
-#btn4{
-    background-color:var(--couleur-orange) ;
-    border-color: var(--couleur-orange);
-}
+
 #btn5{
     background-color: rgb(18, 128, 68);
     border-color: rgb(18, 128, 68);
 }
-#btn6{
-    color: black;
-}
+
 
 
 
@@ -528,7 +523,7 @@ table{
 
 
 #ඞ{
-    color: rgb(200, 200, 200);
+    color: rgb(228, 228, 228);
     text-align: right;
     margin-right: 5%;
 }
