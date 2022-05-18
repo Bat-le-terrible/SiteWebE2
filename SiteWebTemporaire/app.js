@@ -45,7 +45,7 @@ const bouton = document.getElementById('topPage')
 window.addEventListener('scroll', ()=>{       
 
     if(navigator.userAgent.match (/iphone/i) || navigator.userAgent.match (/Android/i)){
-
+        
     }else{
             if(scrollY > 150){
                 navbar.style.background = "rgb(30,30,30)"
