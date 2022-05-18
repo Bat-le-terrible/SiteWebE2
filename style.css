@@ -11,6 +11,13 @@ body {
 
     }
 
+#horoscope {
+    background-color: rgb(2, 6, 34);
+    color:white;
+}
+
+
+
 #logo{
     position: absolute;
     top: 17px;
@@ -212,6 +219,8 @@ div {
     background-color: #6c3a27;
 }
 
+
+
 .footerTitre {
     text-align: left;
     color: white;
@@ -332,6 +341,30 @@ h5 {
 #rub_index{
     text-align: center;
 }
+
+.horoscope {
+    color: rgb(255, 255, 255);
+    font-family: "Bradley Hand", cursive;
+    text-decoration: none;
+}
+
+.pHoro {
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.h3Horo {
+    text-align: center;
+    text-decoration: none;
+    font-size: large;
+    font-family: 'Segoe UI', Verdana, Tahoma, Geneva, sans-serif, Geneva, Tahoma, sans-serif;
+    color: rgb(248, 93, 3);
+}
+
+.underline {
+    text-decoration: underline;
+}
+
 .voyage{
     color: rgb(7, 34, 190);
     font-family: "Bradley Hand", cursive;

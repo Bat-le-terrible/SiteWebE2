@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <!-- <link rel="stylesheet" href="style.css"> -->
 
-    <title>Yo</title>
+    <title>L'Horoscope</title>
 
     <script>
         if(navigator.userAgent.match (/iphone/i) || navigator.userAgent.match (/Android/i)){
@@ -19,7 +19,7 @@
 
 
 
-<body>
+<body id="horoscope">
     <header>
         <div id="contenant">
             <img id ="bg_header" src="../../Images/wallpeper.jpeg" alt="image de fond"> 
@@ -41,9 +41,7 @@
     </header>
     
     <div id="test">
-        <button class = "rubriques" onclick="window.location.href = '../voyage.html';">Voyage</button> <br>
         <button class = "rubriques" onclick="window.location.href = '../culture.html';">Culture</button><br>
-        <button class = "rubriques" onclick="window.location.href = '../actus.html';">Actualités</button><br>
         <button class = "rubriques" onclick="window.location.href = '../sorties.html';">Sorties</button><br>
         <button class = "rubriques" onclick="window.location.href = '../scientifique.html';">Scientifique</button>
     </div>
@@ -51,64 +49,224 @@
     <p id="br_mobile">
         <br><br><br>
     </p>
+    <section>
+        <h1 class="horoscope">Horoscope</h1>
+ </section>
 
     <section>
-        <h1 class="scientifique">Horoscope</h1>
-        <p class="attaque">La vie unicellulaire prendra-t-elle le dessus ?</em></p>
-        <img class="imgArt" src="../images/blob_illus.jpg" height="100%">
-        <h4>Rédaction par Clémentine Catalano, Elya Castaing et Abigael Walmsley</h4>
-    </section>
+                <br/>
+        <table width=100% border=0 cellspacing=0 cellpadding=10>
+            <tr>
+                <td width="120px">
+                    <img src="../images/HoroBelier.PNG"  height="140px">
+                </td>
 
-    <section>
-        <br/>
-        <p>Le <em>Physarum Polycephalum</em>, aussi connu sous le nom de Blob, est un être vivant unicellulaire qui permet aux scientifiques des avancées dans les laboratoires. Il ne craint ni le feu, ni l’eau mais il est sensible à la lumière. Il est presque immortel. Dans la nature, il se nourrit de champignons, de levures et d’autres blobs. Il cicatrise et referme sa membrane en seulement 2 minutes. Sans cerveau ni jambes, il se déplace, grandit jusqu’à 10 cm² et résout des problèmes.
-        </p>
-    </section>
-    
-    <section>
-        <br/>
-        <h3 class="scientifique">Nakagaki et Dussutour</h3>
-        <p>La scientifique Audrey Dussutour a prouvé par plusieurs expériences que selon d'où viennent les BLOBS, ils se comportent différemment. En effet, un blob australien se fait tuer par un blob américain et ignoré par un blob japonais, et 2 blobs australiens s'assemblent pour n'en former qu'un seul.
-        </p>
-        <p>Le régime alimentaire est aussi assez spécifique, alors que les blobs du laboratoire, australiens de Mme Dussutour se nourrissaient de flocons d'avoine bio, les blob américains ont refusé de les manger pour opter pour des flocons d'avoine de supermarché, plus gras et calorique.            
-        <br/><em>->Les blob suivraient-ils les clichés de la population ?</em>
-        </p>
-        <p>Mme Dussutour a aussi prouvé que le blob s'adapte et que 2 blobs peuvent se partager des informations et des capacités. Les blobs détestent le sel, et si au fur et à mesure qu'un blob est en contact avec celui-ci, il s'adapte et le supporte. Si ce blob qui s'est adapté au sel est en contact avec un blob non adapté, les 2 blobs seront adaptés au sel.
-        </p>
-        <p>Le blob laisse derrière lui une trace de mucus pour savoir s'il est déjà passé par là. Cependant, il ne différencie pas le mucus des tubes blob et du sien, et se retrouve perdu si toute la surface sur laquelle il est posé est recouverte de mucus. C'est ce qu'a prouvé cette scientifique aussi.
-        </p>
-        <p>
-        <br/><br/>Un autre scientifique de renom a aussi travaillé sur le blob et a reçu beaucoup de prix pour ses travaux : Toshiyuki Nakagaki.
-        </p>
-        <p>Ce scientifique a prouvé "l'esprit de logique" d'un blob. En effet, il a réussi à faire trouver la sortie d'un labyrinthe d'un blob, ou encore de lui faire faire les routes ferroviaires du Japon.
-        </p>
-        <p>Il a aussi réussi à prouver qu'un blob peut anticiper une action si elle se répète toujours à un intervalle de temps régulier.
-        </p>
-    </section>
+                <td>
+                    <h3 class="h3Horo">Bélier :</h3>
+                    <p class="pHoro">
+                        <strong class="underline">Amour :</strong> vous savez bien cacher votre jeu, sous cette forme peu attrayante se cache un réel Apollon, bonne chance soldat, le chemin est long et périlleux. Il s’agirait de jouer avec autre chose que des stylos.
+                        <br/><br/>
+                        <strong class="underline">Travail :</strong> arrêtez de foncer dans les portes, ouvrez les. 
 
-    <section>
-        <br/>
-        <h3 class="scientifique">L'ISS VS les E²</h3>
-        <p>Tandis que les scientifiques font des expériences complexes, nous en faisons des plus simples en classe, un miroir de celles à bord de l’ISS. Deux protocoles : exploitation et exploration, ont été mis en place pour observer le comportement des blobs en microgravité. L'intérêt des expériences faites par des élèves partout en France est d’avoir un grand nombre de résultats et d'élargir les connaissances de la population au sujet de ces êtres vivants incroyables.
-        </p>
-        <p>Le protocole exploration s’agit de laisser un blob seul, dans une boîte de pétri, à découvrir son environnement. Le protocole exploitation s’agit également d’un blob dans une boîte de pétri, mais cette fois-ci il a le droit à 4 flocons d’avoine, sa nourriture préférée.
-        </p>
-        <p>Nous avons pu voir, grâce aux résultats publiés par Audrey Dussutour, que la seule grande différence entre le développement des blobs sur l’ISS et sur Terre est que ceux dans la station spatiale ont évolué dans la troisième dimension, alors que sur Terre ils n'exploitent que la seconde.
-        </p>
-    </section>
+                    </p>
+                    
+                </td>
+            </tr>
+            <tr><td></td><td></td></tr>
 
-    <section>
-        <br/><br/>
-        <p class="conclusion">Cet être mystérieux peut permettre de nombreuses avancées scientifiques, c’est pour cela qu’il nous fascine tant. En somme, le Blob est un être intriguant, sans cerveau, qui est doté d’une certaine capacité d’apprentissage.
-        </p>
-    </section>
+            <tr>
+                <td width="120px">
+                    <img src="../images/HoroTaureau.PNG"  height="140px">
+                </td>
 
-    <section>
-        <br/>
-        <br/>
-        <p class="auteur">
-            Cet article a été rédigé par Clémentine Catalano, Elya Castaing et Abigael Walmsley
-        </p>
+                <td>
+                    <h3 class="h3Horo">Taureau :</h3>
+                    <p class="pHoro">
+                        <strong class="underline">Amour :</strong> 
+                        arrêtez de faire de l’humour vache, votre charme suffit.                        
+                        <br/><br/>
+                        <strong class="underline">Travail :</strong>
+                        Vous travaillez beaucoup mais le fruit de votre travail a un goût que les autres ne supportent pas
+                    </p>
+                    
+                </td>
+            </tr>
+            <tr><td></td><td></td></tr>
+
+                        <tr>
+                <td width="120px">
+                    <img src="../images/HoroGemeau.PNG"  height="140px">
+                </td>
+
+                <td>
+                    <h3 class="h3Horo">Gémeaux :</h3>
+                    <p class="pHoro">
+                        <strong class="underline">Amour :</strong> 
+                        ton esprit est peut être vif et rapide, cependant vous analysez mal vos relations et vos paroles sont souvent amphigouriques. Après, nous avons toujours des axes de progrès :)
+                        <br/><br/>
+                        <strong class="underline">Travail :</strong>
+                        c’est bien de savoir faire un exercice mais savoir en faire 14 serait mieux.                    </p>
+                    
+                </td>
+            </tr>
+            <tr><td></td><td></td></tr>
+
+            <tr>
+                <td width="120px">
+                    <img src="../images/HoroCancer.PNG"  height="140px">
+                </td>
+
+                <td>
+                    <h3 class="h3Horo">Cancer :</h3>
+                    <p class="pHoro">
+                        <strong class="underline">Amour :</strong> 
+                        vous êtes très timide, arrêtez d'écouter des chansons d’amour, trouvez le.                        <br/><br/>
+                        <strong class="underline">Travail :</strong>
+                        connaissez-vous la couleur du ciel et des jardins? (non ce n’est pas rouge.)                    </p>
+                    
+                </td>
+            </tr>
+            <tr><td></td><td></td></tr>
+
+            <tr>
+                <td width="120px">
+                    <img src="../images/HoroLion.PNG"  height="140px">
+                </td>
+
+                <td>
+                    <h3 class="h3Horo">Lion :</h3>
+                    <p class="pHoro">
+                        <strong class="underline">Amour :</strong> 
+                        Vous vous surestimez un peu trop, jouer sur plusieurs tableaux ne vous aidera pas à avoir ce que vous voulez. Concentrez-vous sur une seule cible et vous arriverez à tirer dans le mille.                        
+                        <br/><br/>
+                        <strong class="underline">Travail :</strong>
+                        ... (oui oui il n’y a rien)                    
+                </td>
+            </tr>
+            <tr><td></td><td></td></tr>
+
+            <tr>
+                <td width="120px">
+                    <img src="../images/HoroVierge.PNG"  height="140px">
+                </td>
+
+                <td>
+                    <h3 class="h3Horo">Vierge :</h3>
+                    <p class="pHoro">
+                        <strong class="underline">Amour :</strong> 
+                        Pour vous la page reste blanche… Comme disait Jean Claude Dusse « Oublie que tu n’as aucune chance, vas-y fonce! »
+                        
+                        <br/><br/>
+                        <strong class="underline">Travail :</strong>
+                        arrêtez de fluoter tout et n’importe quoi, car dans quelques semaines une offre d’emploi vous sera proposée dans la station d’épuration de Poitou-Charentes.                </td>
+            </tr>
+            <tr><td></td><td></td></tr>
+
+            <tr>
+                <td width="120px">
+                    <img src="../images/HoroBalance.PNG"  height="140px">
+                </td>
+
+                <td>
+                    <h3 class="h3Horo">Balance :</h3>
+                    <p class="pHoro">
+                        <strong class="underline">Amour :</strong> 
+                        Vous pesez sans-cesse le pour et le contre, mais je ne crois pas qu’il y est de bonnes ou de mauvaises situations, suivez votre cœur.                        
+                        
+                        <br/><br/>
+                        <strong class="underline">Travail :</strong>
+                        Vous n’avez jamais tenu de stylos de votre vie et ne le ferez jamais, cependant votre cerveau est égal à celui de 10 hommes.            </tr>
+            <tr><td></td><td></td></tr>
+
+            <tr>
+                <td width="120px">
+                    <img src="../images/HoroScorpion.PNG"  height="140px">
+                </td>
+
+                <td>
+                    <h3 class="h3Horo">Scorpion :</h3>
+                    <p class="pHoro">
+                        <strong class="underline">Amour :</strong> 
+                        Arrêtez de cracher votre venin sur tout le monde et acceptez les compliments. Cependant, il faudrait apprendre à en faire aussi.
+                                                
+                        <br/><br/>
+                        <strong class="underline">Travail :</strong>
+                        il est clair que ce n’est pas votre priorité mais on peut vous assurer que 3/20 n’est pas satisfaisant.
+                </tr>
+            <tr><td></td><td></td></tr>
+
+            <tr>
+                <td width="120px">
+                    <img src="../images/HoroSagittaire.PNG"  height="140px">
+                </td>
+
+                <td>
+                    <h3 class="h3Horo">Sagittaire :</h3>
+                    <p class="pHoro">
+                        <strong class="underline">Amour :</strong> 
+                        Les astres vous sont propices, mais attention, essayez de rester tout de même sur vos gardes car les lions pourraient vous sauter dessus.
+                        <br/><br/>
+                        <strong class="underline">Travail :</strong>
+                        1789 n’est pas la date de naissance de Michael Jackson. Apprenez déjà ça et on verra plus tard pour la suite.
+
+                </tr>
+            <tr><td></td><td></td></tr>
+
+            <tr>
+                <td width="120px">
+                    <img src="../images/HoroCapricorne.PNG"  height="140px">
+                </td>
+
+                <td>
+                    <h3 class="h3Horo">Capricorne :</h3>
+                    <p class="pHoro">
+                        <strong class="underline">Amour :</strong> 
+                        se fera remarquer, son caractère changeant dû aux nouvelles rencontres effectuées, le poussera à se démener pour séduire ton/ta dulciné(e), en vain. Malheureusement ta détermination te rendra ridicule.
+                        <br/><br/>
+                        <strong class="underline">Travail :</strong>
+                        votre travail personnel laisse à désirer, ouvrir un cahier de temps en temps pourrait vous être utile.
+
+                </tr>
+            <tr><td></td><td></td></tr>
+
+            <tr>
+                <td width="120px">
+                    <img src="../images/HoroVerseau.PNG"  height="140px">
+                </td>
+
+                <td>
+                    <h3 class="h3Horo">Verseau :</h3>
+                    <p class="pHoro">
+                        <strong class="underline">Amour :</strong> 
+                        a beaucoup de charme, mais ne l’utilise pas à bon escient. A des conversations avec beaucoup de personnes, soit, mais ne répond pas à ses nombreux fans.
+                        <br/><br/>
+                        <strong class="underline">Travail :</strong>
+                        votre travail ne sert à rien si votre cerveau ne suit pas. 
+
+                </tr>
+            <tr><td></td><td></td></tr>
+
+            <tr>
+                <td width="120px">
+                    <img src="../images/HoroPoisson.PNG"  height="140px">
+                </td>
+
+                <td>
+                    <h3 class="h3Horo">Poisson :</h3>
+                    <p class="pHoro">
+                        <strong class="underline">Amour :</strong> 
+                        totalement lunatique, ne sait pas ce qu’il/elle veut. Durant la pleine Lune de ce mois, vous allez enfin trouver l’amour. Cette révélation vous apprendra à faire davantage confiance. Vous vous en doutez peut-être mais cette personne se trouve déjà dans votre entourage.
+                        <br/><br/>
+                        <strong class="underline">Travail :</strong>
+                        vous connaissez ce mot ??
+
+                </tr>
+            <tr><td></td><td></td></tr>
+
+            
+
+
+        </table>
     </section>
 
         <div id="rub_is_visible">false</div>  <!--NE PAS TOUCHER, SERT POUR LE JS a DEFINIR SI LA DIV RUBRIQUE EST ACTIVEE-->
@@ -136,9 +294,9 @@
                         <h4 class="footerTitre">Retrouvez nous sur les réseaux sociaux :</h4>
                         <p class="footerInfo">
                             <center>
-                            <a href="https://www.instagram.com/ppr_lycee/" target="_blank"><img src="images/LogoInsta.png" height="50px"></a>
-                            <a href="https://pierre-paul-riquet.mon-ent-occitanie.fr"target="_blank"><img src="images/logo_occitanie.png" height="50px"></a>
-                            <a href="https://www.youtube.com/channel/UCx279O2nybQMq-FEtrhPSKQ"target="_blank"><img src="images/logoYT.png" height="50px"></a>
+                            <a href="https://www.instagram.com/ppr_lycee/" target="_blank"><img src="../images/Instagram_icon.png.webp" height="50px"></a>
+                            <a href="https://pierre-paul-riquet.mon-ent-occitanie.fr"target="_blank"><img src="../images/logo_occitanie.png" height="50px"></a>
+                            <a href="https://www.youtube.com/channel/UCx279O2nybQMq-FEtrhPSKQ"target="_blank"><img src="../images/logoYT.png" height="50px"></a>
                             </center>
                         </p>
                     </td>
