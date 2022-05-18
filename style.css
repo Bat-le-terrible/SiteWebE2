@@ -251,6 +251,10 @@ font-size: 12px;
     background-color: rgba(140, 166, 187, 0.253)
 }
 
+.choixArtVoyage {
+    background-color: rgba(150, 140, 187, 0.253)
+}
+
 .txtArt {
     text-align: left;
     font-size: large;
