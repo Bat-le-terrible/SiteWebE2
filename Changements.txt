@@ -1,0 +1,10 @@
+/Images : ajout de Wallpaper 2 et 3
+/Images/PhotoElèves : ajout de Nora, Mme BAILHE , BOUSQUET et M Vilala
+
+
+Dossier sus : ajout de enigme2.html  , modification de amogos.js , et de fbi.html
+
+Dossier racine : modification de event.js , fichiers style.css et mobile_style.css , credits.html
+
+
+Ajouter tout le dossier Rubriques

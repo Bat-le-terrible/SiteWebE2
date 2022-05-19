@@ -3,7 +3,7 @@
 
 
 //! Changer le chemin d'accès en fonction du serveur
-if(location.pathname === "/index.html" || location.pathname === "/"){
+if(location.pathname === '/JournalE2/' || location.pathname === "/JournalE2/index.html"){
     console.log("pathname : True")
     const sus = document.getElementById('ඞ')
     if(navigator.userAgent.match (/iphone/i) || navigator.userAgent.match (/Android/i)){
@@ -18,7 +18,7 @@ if(location.pathname === "/index.html" || location.pathname === "/"){
         })
     }
 }
-if(location.pathname === "/credits.html"){
+if(location.pathname === "/JournalE2/credits.html"){
     let TheRealImage = document.getElementById('key')
     TheRealImage.addEventListener('click', ()=>{
         window.location.href = "sus/pour_le_fbi.html"
@@ -26,19 +26,18 @@ if(location.pathname === "/credits.html"){
 }
 
 
+//Event 2
+// const logo = document.getElementById('logo')
+// logo.addEventListener('hover', () =>{
+//     console.log('test')
+//     let nb = 5
+//     setInterval(()=>{
+//         for(i=0; i<5;i++){
+//             logo.title = "5"
+//             nb = nb-1
 
-const logo = document.getElementById('logo')
+//         }
+//     },1000)
+// })
 
-if(logo){
-    logo.addEventListener('mouseover', ()=>{
-        logo.title === "Press S"
-        console.log('Souris détecté')
 
-        document.addEventListener("keypress", key =>{
-            console.log(key.code)
-            if(key.code === "KeyS"){
-                window.location.href = "sus/virus.html"
-            }
-        })
-    })
-}

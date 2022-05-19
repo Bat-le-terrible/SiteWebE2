@@ -22,8 +22,8 @@ body {
     position: absolute;
     top: 17px;
     left: 13px;
-    height: 60px;
-    width: 105px;
+    height: 40px;
+    width: 70px;
 }
 /* Haut de page */
 #bg_header{
@@ -54,7 +54,7 @@ body {
 
 #Bandeau{
     width: 100%;
-    height: 85px;
+    height: 65px;
     background: rgb(30,30,30);  /*A régler sur transparent et ajouter la couleur au scroll (js)*/
     z-index: 2;
     position: fixed;
@@ -75,7 +75,7 @@ body {
     color: white;
     background-color: transparent;
     border-color: transparent;
-    font-size: 180%;
+    font-size: 130%;
     margin: 0 10px;
     text-shadow: 2px 1px black;
 }
@@ -85,7 +85,7 @@ button:hover{
 
 /* Menu déroulant */
 .rubriques{
-    font-size:150%;
+    font-size: 90%;
     color:white;
     background: transparent;
     border-color: transparent;
@@ -100,12 +100,12 @@ button:hover{
 /*Test*/
 #test{
     background: rgb(30,30,30);
-    width: 200px;
-    height:110px;
+    width: 150px;
+    height:75px;
     text-align: center;
-    right: 480px;
+    right: 370px;
     position: fixed;
-    top: 70px;
+    top: 55px;
     visibility: hidden;
         
 }
@@ -244,16 +244,8 @@ font-size: 12px;
     background-color: rgba(216, 174, 174, 0.253)
 }
 
-.choixArtScien {
-    background-color: rgba(143, 187, 141, 0.253)
-}
-
 .choixArtExtra {
     background-color: rgba(140, 166, 187, 0.253)
-}
-
-.choixArtVoyage {
-    background-color: rgba(150, 140, 187, 0.253)
 }
 
 .txtArt {
@@ -415,9 +407,6 @@ h5 {
     font-size: medium;
     text-align: center;
     margin: 60px;
-    font-size: 145%;
-
-
 }
 #edito{
     font-size: 105%;
@@ -532,7 +521,7 @@ table{
 
 
 #ඞ{
-    color: rgb(220, 220, 220);
+    color: rgb(200, 200, 200);
     text-align: right;
     margin-right: 5%;
 }
