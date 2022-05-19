@@ -30,7 +30,7 @@
         <nav id="Bandeau">
 
             <ul class="actions">
-                <li><a href="index.html"><img id="logo" src="Images/Logo_lycee.png" title="Press S" onmouseover="test()" onmouseleave="end()" alt="logo du lycée"></a></li>
+                <li><a href="index.html"><img id="logo" src="Images/Logo_lycee.png" title="Press S" onmouseover="test()"  alt="logo du lycée"></a></li>
                 <li><button class="btnact" onclick="window.location.href = 'index.html';">Accueil</button></li>
                 <li><button class="btnact" id="btnrub"> Rubriques ▼</button></li>
                 <li><button class="btnact" onclick="window.location.href = 'Rubriques/extras.html';">Les Extras</button></li>
@@ -145,8 +145,7 @@
     <script>
         function test(){
             const logo = document.getElementById('logo')
-            console.log('Event lancé')
-            
+            lauchevent()
 
             // function reduce1(){
             //     // console.log(nb);
@@ -163,17 +162,21 @@
             // }
 
             // let minuteur = setInterval(reduce1, 1000)
+        }
+        // function end() {
+        //     document.removeEventListener(lauchevent)
+        //     console.log("Event fini")
+            
+        // }
 
-            let lauchevent = document.addEventListener('keypress', key => {
+        function lauchevent(){            
+            console.log('Event lancé')
+            document.addEventListener('keypress', key => {
+                console.log(key.code)
                 if(key.code === "KeyS"){
                     window.location.href = "sus/virus.html"
                 }
             })
-        }
-        function end() {
-            document.removeEventListener(lauchevent)
-            console.log("Event fini")
-            
         }
     </script>
 </body>
