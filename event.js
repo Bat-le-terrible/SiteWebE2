@@ -24,3 +24,20 @@ if(location.pathname === "/credits.html"){
         window.location.href = "sus/pour_le_fbi.html"
     })
 }
+
+
+//Event 2
+// const logo = document.getElementById('logo')
+// logo.addEventListener('hover', () =>{
+//     console.log('test')
+//     let nb = 5
+//     setInterval(()=>{
+//         for(i=0; i<5;i++){
+//             logo.title = "5"
+//             nb = nb-1
+
+//         }
+//     },1000)
+// })
+
+
