@@ -24,3 +24,21 @@ if(location.pathname === "/credits.html"){
         window.location.href = "sus/pour_le_fbi.html"
     })
 }
+
+
+
+const logo = document.getElementById('logo')
+
+if(logo){
+    logo.addEventListener('mouseover', ()=>{
+        logo.title === "Press S"
+        console.log('Souris détecté')
+
+        document.addEventListener("keypress", key =>{
+            console.log(key.code)
+            if(key.code === "KeyS"){
+                window.location.href = "sus/virus.html"
+            }
+        })
+    })
+}
