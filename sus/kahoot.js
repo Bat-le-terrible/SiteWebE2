@@ -1,3 +1,4 @@
+
 // info: Déclaration des variables + déclenchement de la question 1
 // todo: Faire la page finale à la fin du QCM
 var btn1 = document.getElementById('Choix1')
@@ -159,8 +160,17 @@ document.body.addEventListener('click', function (evt) {
 
 function checkrep(){
     let rp = document.getElementById('rep')
-    if(rp.value === "ANDRIAMAHEFASON"){
-        alert('GG')
+    if(rp.value === "A"){  //NDRIAMAHEFASON
+        let divQ = document.getElementById('question')
+        let nicerep = document.getElementById('nicerep')
+        let backbtn = document.getElementById('back')
+
+        divQ.style.display = "none"
+        nicerep.style.display = "block"
+        backbtn.style.display = "block"
+
+
+        document.cookie = 'Try_QCM=1; path=/ ; expires=' + date;
     }else{
         elimplayer()
     }
@@ -172,7 +182,7 @@ function antipaste(){
 }
 
 //info: Code de retour à l'acceuil en cas de mauvaise réponse
-function elimplayer() {
+function elimplayer(){
 
     //*Changement du contenu de page
     let question = document.getElementById("question")
@@ -350,7 +360,7 @@ let showTry = document.getElementById('nbTry')
 
 let nbTry = getCookie('Try_QCM')
 if (nbTry != "") {
-    showTry.innerHTML = `<br><br><br><br>Essai n°: ${nbTry}<br><br>Cette fonctionnalité nécessite d'utiliser les cookies et comme en JavaScript c'est un peu relou soit reconnaissant stp (Ps: Baptiste est un génie du code pour avoir fait ça)`
+    showTry.innerHTML = `<br><br>Essai n°: ${nbTry}<br><br>Cette fonctionnalité nécessite d'utiliser les cookies et comme en JavaScript c'est un peu relou soit reconnaissant stp (Ps: Baptiste est un génie du code pour avoir fait ça, et évidemment je troll)`
 } else {
     showTry.innerHTML = "Essai n°1"
 }
