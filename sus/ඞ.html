@@ -9,19 +9,25 @@
     <h1>Enigme 1</h1>
     <div id="securite">
 
-        <br><br><br><br>
+        <br><br>
         <h2>Si tu trouves cette page c'est que tu as trouvé la première partie de l'énigme, mais les choses vont se compliquer.<br>Pour accéder au secret du site, tu vas devoir trouver le mot de passe</h2>
         <br><br><br>
         <h1><mark>Incides : <a href="https://www.youtube.com/watch?v=ZKuDJQqy6ak">ඞ</a> , UNICODE et Sri Lanka <br></mark>Bonne chance </h1>
-        <br><br><br><br><br>
+        <br><br><br>
         <ul>
             <li>U+</li>
             <li><input type="password" id="rep"></li>
             <li><button id="valid" onclick="checkrep()">Valider</button></li>
         </ul>
+       <h5>(flemme de coder une fonction pour utiliser "Enter")</h5> 
+    </div>
+    <div id="elim">
+        <!-- info: Elimination 1 -->
+        <h1 id="txtelim">Mauvaise Réponse</h1>
+        <img id="gif" src="elimination.gif" alt="gif" width="50%">
     </div>
 
-    <div id="easter_egg">
+    <div id="nicerep">
         <h1><u>Comme promis, voici le texte qui nous a servi de modèle et qui nous a bien fait rire (aucune modification n'a été faite)</u></h1>
         <p id="texte"></p>
 
@@ -29,6 +35,9 @@
     </div>
 
     <style>
+        input, button{
+            font-size:60%
+        }
         h1,h2{
             text-align: center;
         }
@@ -38,7 +47,7 @@
             justify-content: center;
         }
         li{
-            font-size: 150%;
+            font-size: 200%;
         }
         #securite{
             visibility: visible;
@@ -54,9 +63,14 @@
         #back{
             font-size: 150%;
         }
-        #easter_egg{
-            visibility: hidden;
-            margin-top: -300px;
+        #nicerep{
+            display: none;
+        }
+        #elim{
+            display: none;
+            text-align: center;
+            margin: 0 auto;
+            width: 100%;
         }
     </style>
     <script src="amogos.js"></script>

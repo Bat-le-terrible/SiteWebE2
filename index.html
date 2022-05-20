@@ -142,43 +142,7 @@
     </footer>
     <script src="app.js"></script>
     <script src="event.js"></script>
-    <script>
-        function test(){
-            const logo = document.getElementById('logo')
-            lauchevent()
 
-            // function reduce1(){
-            //     // console.log(nb);
-            //     console.log(logo.title)
-            //     logo.title === nb
-
-
-            //     if(nb > 0){
-            //         nb--
-            //     }else if(nb===0){
-            //         console.log('stop')
-            //         clearInterval(minuteur)
-            //     }
-            // }
-
-            // let minuteur = setInterval(reduce1, 1000)
-        }
-        // function end() {
-        //     document.removeEventListener(lauchevent)
-        //     console.log("Event fini")
-            
-        // }
-
-        function lauchevent(){            
-            console.log('Event lancé')
-            document.addEventListener('keypress', key => {
-                console.log(key.code)
-                if(key.code === "KeyS"){
-                    window.location.href = "sus/virus.html"
-                }
-            })
-        }
-    </script>
 </body>
 
 </html>

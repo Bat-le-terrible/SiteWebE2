@@ -11,7 +11,6 @@
 
 <div id="question">
     <h1 >Enigme 3</h1>
-    <br><br>
     <h2>Félicitations, tu es arrivé jusqu'a la dernière enigme! <br></h2>
     <p id="Numquest"></p>  <br>
     <p id="question_content"></p>  
@@ -24,10 +23,17 @@
     </ul>
 </div>
 
+<div id="nicerep">
+    <h1>Félicitations! <br>Tu as trouvé la réponse à la dernière enigme!</h1>
+    <p>Nous te proposons donc un petit best of de BOF TV (d'autres seront bientôt dispo sur notre <a href="https://www.youtube.com/channel/UCWhvq0hwJKHsPyHdl0HYQ_g/featured">chaîne youtube</a></p>
+</div>
+
+
 <div id="nbTry">
 
 </div>
-
+<br>
+<button style="font-size: 110%;"id="back" >Retour au journal</button>
 
 
     <div id="elim">
@@ -42,7 +48,9 @@
     </div>
     <style>
 
-
+        body{
+            font-size: 130%;
+        }
         #elim{
             /* top:0px;
             position: fixed; */
@@ -53,7 +61,6 @@
 
         }
         #question{
-            /* display: flex; */
             text-align: center;
         }
         #gif{
@@ -69,7 +76,12 @@
         li{
             font-size: 150%;
         }
-
+        #back{
+            display: none;
+        }
+        #nicerep{
+            display: none;
+        }
     </style>
 
 

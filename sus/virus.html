@@ -3,9 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>??</title>
 </head>
-<body>
-    <h1 style="text-align: center;font-size: 300%;">Enigme 2</h1>
+<body>    
+    <div id="securite">
+    <h1>Enigme 2</h1>
+    <br>
+    <h1>Résoudre l'énigme: </h1><br>
+    <p style="font-size: 120%;">Lors d'une course de 200km, un coureur veut établir un record avec une vitesse moyenne de 100km/h. Au début, il fait les 20 premiers kilomètres en 30 minutes. <br>A quelle vitesse constante doit-il rouler ensuite pour atteindre son objectif? </p>
+
+        <br><br><br><br>
+        <ul>
+            <li><input type="number" id="rep" ></li>
+            <li><button id="valid" onclick="checkrep()">Valider</button></li>
+        </ul>
+    </div>
+    <div id="nicerep">
+        <h1>Bonne réponse !</h1>
+        <p style="font-size: 120%;">Voici un petit bout de code légèrement engagé, et un meme:</p>
+        <br><br><br>
+            <img width="60%" src="./propagande.png">
+            <img width="30%" src="./meme.jpg">
+            <h5>(le code est faux, mais le meme est vrai :))</h5>
+    </div>
+    <div id="elim">
+        <!-- info: Elimination 1 -->
+        <h1 id="txtelim">Mauvaise Réponse</h1>
+        <img id="gif" src="elimination.gif" alt="gif" width="50%">
+    </div>
+    <br><br>
+    <button id="back2" onclick="window.location.href = 'back2.mp4'">Retour au journal</button>
+    <style>
+        h1{
+            text-align: center;font-size: 300%;
+        }
+        input, button{
+            font-size:110%
+        }
+        ul{
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+        }
+        li{
+            font-size: 150%;
+        }
+        #nicerep{
+            display:none;
+        }
+        #elim{
+            display: none;
+            text-align: center;
+            margin: 0 auto;
+            width: 100%;
+        }
+        #back2{
+            display: none;
+        }
+        #gif{
+            margin: 0 auto;
+            
+        }
+        ol{
+            display: flex;
+        }
+    </style>
+    <script src="amogos.js"></script>
 </body>
 </html>
