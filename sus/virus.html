@@ -3,23 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>??</title>
 </head>
-<body>
-    <h1 style="text-align: center;font-size: 300%;">Enigme 2</h1>
-    <br><br><br>
-    <h3>Résoudre l'énigme: </h3>
-
+<body>    
     <div id="securite">
+    <h1>Enigme 2</h1>
+    <br><br><br>
+    <h1>Résoudre l'énigme: </h1>
+    <p style="font-size: 120%;">Lors d'une course de 200km, un coureur veut établir un record avec une vitesse moyenne de 100km/h. Au début, il fait les 20 premiers kilomètres en 30 minutes. <br>A quelle vitesse constante doit-il rouler ensuite pour atteindre son objectif? </p>
 
         <br><br><br><br>
         <ul>
-            <li><input type="text" id="rep"></li>
+            <li><input type="number" id="rep" ></li>
             <li><button id="valid" onclick="checkrep()">Valider</button></li>
         </ul>
     </div>
+    <div id="nicerep">
+        <h1>Bonne réponse !</h1>
+        <p style="font-size: 120%;">Voici un petit bout de code légèrement engagé:</p>
+        <br><br><br>
+        <img src="./propagande.png">
+    </div>
 
     <style>
+        h1{
+            text-align: center;font-size: 300%;
+        }
         input, button{
             font-size:150%
         }
@@ -30,6 +39,9 @@
         }
         li{
             font-size: 150%;
+        }
+        #nicerep{
+            display:none;
         }
     </style>
     <script src="amogos.js"></script>
