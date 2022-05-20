@@ -3,7 +3,7 @@
 
 
 //! Changer le chemin d'accès en fonction du serveur
-if(location.pathname === '/JournalE2/' || location.pathname === "/JournalE2/index.html"){
+if(location.pathname === '/' || location.pathname === "/index.html"){
     console.log("pathname : True")
     const sus = document.getElementById('ඞ')
     if(navigator.userAgent.match (/iphone/i) || navigator.userAgent.match (/Android/i)){
