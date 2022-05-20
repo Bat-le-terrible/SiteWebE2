@@ -24,8 +24,13 @@
         <br><br><br>
         <img width="60%" src="./propagande.png">
     </div>
+    <div id="elim">
+        <!-- info: Elimination 1 -->
+        <h1 id="txtelim">Mauvaise Réponse</h1>
+        <img id="gif" src="elimination.gif" alt="gif" width="50%">
+    </div>
     <br><br>
-    <button onclick="window.location.href = 'back2.mp4'">Retour au journal</button>
+    <button id="back2" onclick="window.location.href = 'back2.mp4'">Retour au journal</button>
     <style>
         h1{
             text-align: center;font-size: 300%;
@@ -43,6 +48,19 @@
         }
         #nicerep{
             display:none;
+        }
+        #elim{
+            display: none;
+            text-align: center;
+            margin: 0 auto;
+            width: 100%;
+        }
+        #back2{
+            display: none;
+        }
+        #gif{
+            margin: 0 auto;
+            
         }
     </style>
     <script src="amogos.js"></script>
