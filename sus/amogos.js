@@ -15,18 +15,50 @@ else if(location.pathname === "/JournalE2/sus/pour_le_fbi.html"){
     // ! Code transféré dans kahoot.js
     }
 else if(location.pathname === "/sus/virus.html"){
+    
     function checkrep(){
         let rep = document.getElementById('rep');
         let quest = document.getElementById('securite');
         let nicerep = document.getElementById('nicerep');
+        const btn = document.getElementById('back2')
 
         if(rep.value === "120"){
             quest.style.display = "none"
-            console.log('Test')
             nicerep.style.display = "block"
+            btn.style.display = "block"
+        }else{
+            quest.style.display = "none"
+            elimplayer()
         }
     }
 }
 
 
+
+function elimplayer(){
+    //*Changement du contenu de page
+    let elim = document.getElementById('elim')
+    let gif = document.getElementById('gif')
+
+    elim.style.display = "block"
+
+
+    //* Exécution des sons et du retour à l'acceuil
+    //!Le code est buggé lors du premier click, à retravailler (avec les .then ?)
+
+    // info: Elimination 1 (squid game)
+    playsound().then(() => {
+        gif.style.visibility = "visible"
+        setTimeout(() => {
+            window.location.href = "../index.html"
+        }, 6650); //Valeur de départ : 5650
+    })
+}
+let playsound = function playsound() {
+    return new Promise((resolve, reject) => {
+        resolve('go')
+        let son = new Audio('rick.mp3')
+        son.play()
+    })
+}
 
