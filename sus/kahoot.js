@@ -350,7 +350,7 @@ let showTry = document.getElementById('nbTry')
 
 let nbTry = getCookie('Try_QCM')
 if (nbTry != "") {
-    showTry.innerHTML = `<br><br><br><br>Essai n°: ${nbTry}<br><br><br><br><br>Cette fonctionnalité nécessite d'utiliser les cookies et comme en JavaScript c'est un peu relou soit reconnaissant stp (Ps: Baptiste est un génie du code pour avoir fait ça)`
+    showTry.innerHTML = `<br><br><br><br>Essai n°: ${nbTry}<br><br>Cette fonctionnalité nécessite d'utiliser les cookies et comme en JavaScript c'est un peu relou soit reconnaissant stp (Ps: Baptiste est un génie du code pour avoir fait ça)`
 } else {
     showTry.innerHTML = "Essai n°1"
 }
