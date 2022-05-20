@@ -18,7 +18,7 @@ if(location.pathname === '/JournalE2/' || location.pathname === "/JournalE2/inde
         })
     }
 }
-if(location.pathname === "/JournalE2/credits.html"){
+if(location.pathname === "/credits.html"){
     let TheRealImage = document.getElementById('key')
     TheRealImage.addEventListener('click', ()=>{
         window.location.href = "sus/pour_le_fbi.html"
