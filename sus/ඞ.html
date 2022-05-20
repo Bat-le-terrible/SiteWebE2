@@ -21,8 +21,13 @@
         </ul>
        <h5>(flemme de coder une fonction pour utiliser "Enter")</h5> 
     </div>
+    <div id="elim">
+        <!-- info: Elimination 1 -->
+        <h1 id="txtelim">Mauvaise Réponse</h1>
+        <img id="gif" src="elimination.gif" alt="gif" width="50%">
+    </div>
 
-    <div id="easter_egg">
+    <div id="nicerep">
         <h1><u>Comme promis, voici le texte qui nous a servi de modèle et qui nous a bien fait rire (aucune modification n'a été faite)</u></h1>
         <p id="texte"></p>
 
@@ -58,9 +63,14 @@
         #back{
             font-size: 150%;
         }
-        #easter_egg{
-            visibility: hidden;
-            margin-top: -300px;
+        #nicerep{
+            display: none;
+        }
+        #elim{
+            display: none;
+            text-align: center;
+            margin: 0 auto;
+            width: 100%;
         }
     </style>
     <script src="amogos.js"></script>
