@@ -381,6 +381,13 @@ h5 {
     text-decoration: underline;
 }
 
+.thales {
+    color: rgb(7, 34, 190);
+    font-family: "Bradley Hand", cursive;
+    text-decoration: none;
+    text-align: center;
+}
+
 .voyage{
     color: rgb(7, 34, 190);
     font-family: "Bradley Hand", cursive;
