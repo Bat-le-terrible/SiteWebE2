@@ -22,8 +22,8 @@ body {
     position: absolute;
     top: 17px;
     left: 13px;
-    height: 40px;
-    width: 70px;
+    height: 70px;
+    width: 120px;
 }
 /* Haut de page */
 #bg_header{
@@ -54,7 +54,7 @@ body {
 
 #Bandeau{
     width: 100%;
-    height: 65px;
+    height: 90px;
     background: rgb(30,30,30);  /*A régler sur transparent et ajouter la couleur au scroll (js)*/
     z-index: 2;
     position: fixed;
@@ -65,7 +65,7 @@ body {
 
 /* Bouttons du bandeau */
 .actions{
-    margin-top: 23px;
+    margin-top: 30px;
     list-style-type: none;  /*retire les points devant chaque objet "item"*/
     display: flex;          /*Aligne les objets*/
     justify-content: right;
@@ -75,7 +75,7 @@ body {
     color: white;
     background-color: transparent;
     border-color: transparent;
-    font-size: 130%;
+    font-size: 190%;
     margin: 0 10px;
     text-shadow: 2px 1px black;
 }
@@ -85,7 +85,7 @@ button:hover{
 
 /* Menu déroulant */
 .rubriques{
-    font-size: 90%;
+    font-size: 150%;
     color:white;
     background: transparent;
     border-color: transparent;
@@ -100,17 +100,17 @@ button:hover{
 /*Test*/
 #test{
     background: rgb(30,30,30);
-    width: 150px;
-    height:75px;
+    width: 200px;
+    height:125px;
     text-align: center;
-    right: 370px;
+    right: 500px;
     position: fixed;
-    top: 55px;
+    top: 80px;
     visibility: hidden;
         
 }
 #rub_is_visible{
-    color: rgb(220, 220, 220);
+    color: rgb(228, 228, 228);
 }
 
 /* Boutton haut de page */
@@ -236,16 +236,21 @@ text-decoration: none;
 font-size: 12px;
 }
 
-.choixArt {
-    background-color: rgb(212, 212, 212)
-}
 
 .choixArtCult {
     background-color: rgba(216, 174, 174, 0.253)
 }
 
+.choixArtScien {
+    background-color: rgba(143, 187, 141, 0.253)
+}
+
 .choixArtExtra {
     background-color: rgba(140, 166, 187, 0.253)
+}
+
+.choixArtVoyage {
+    background-color: rgba(150, 140, 187, 0.253)
 }
 
 .txtArt {
