@@ -543,7 +543,6 @@ table{
 
 /*ça t'y touches pas baptiste c'est un peu galère*/
 
-
 .slider-container {
     max-width: 800px;
     position: relative;
@@ -583,8 +582,11 @@ table{
     z-index: 10;
     transition: left 0s 0.75s;
 }
+
+
 [id^="slide"]:checked + .slide-img {
     left: 0;
     z-index: 100;
     transition: left 0.65s ease-out;
 }
+
