@@ -219,6 +219,14 @@ div {
     background-color: #6c3a27;
 }
 
+.titreSpecial{
+    font-size: 400%;
+    text-decoration: double;
+    text-align: center;
+    text-decoration: underline;
+    color:rgb(18, 128, 68);
+    margin-bottom: 80px;
+    }
 
 
 .footerTitre {
