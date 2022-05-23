@@ -236,6 +236,9 @@ text-decoration: none;
 font-size: 12px;
 }
 
+.choixArt {
+    background-color: rgb(212, 212, 212)
+}
 
 .choixArtCult {
     background-color: rgba(216, 174, 174, 0.253)
@@ -404,6 +407,8 @@ h5 {
     color:rgb(18, 128, 68);
     font-family: "Bradley Hand", cursive;
     text-decoration: none;
+    font-size: 400%;
+
 }
 
 .extras {
