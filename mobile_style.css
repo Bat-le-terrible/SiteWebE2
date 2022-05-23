@@ -48,7 +48,12 @@ body {
     color:red;
 }
 
-
+#pourmobile{
+    font-size: 75%;
+    margin: -5%;
+    margin-bottom: 5%;
+    color: rgb(182, 134, 46);
+}
 
 #Bandeau{
     width: 100%;
