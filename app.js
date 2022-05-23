@@ -92,8 +92,10 @@ btnrub.addEventListener("click", () =>{
         isvisible.innerHTML = "false"
 
         btnrub.innerHTML = "Rubriques ▼"
-        if(scrollY < 150){
-            navbar.style.background = 'transparent'
+        if (navigator.userAgent.match(/iphone/i) || navigator.userAgent.match(/Android/i)) {}else{
+            if(scrollY < 150){
+                navbar.style.background = 'transparent'
+            }
         }
     }
 
@@ -106,12 +108,12 @@ btnrub.addEventListener("click", () =>{
 // }
 //Espace pour aérer les mobiles
 
-if (navigator.userAgent.match(/iphone/i) || navigator.userAgent.match(/Android/i)) {}else{
-    let espace = document.getElementById('br_mobile')
-    if(espace){
-        espace.style.display = "none"
-    }
- }
+// if (navigator.userAgent.match(/iphone/i) || navigator.userAgent.match(/Android/i)) {}else{
+//     let espace = document.getElementById('br_mobile')
+//     if(espace){
+//         espace.style.display = "none"
+//     }
+//  }
 
 
 

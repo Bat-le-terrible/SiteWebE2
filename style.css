@@ -109,7 +109,7 @@ button:hover{
         
 }
 #rub_is_visible{
-    color: rgb(220, 220, 220);
+    color: rgb(228, 228, 228);
 }
 
 /* Boutton haut de page */
@@ -219,6 +219,14 @@ div {
     background-color: #6c3a27;
 }
 
+.titreSpecial{
+    font-size: 400%;
+    text-decoration: double;
+    text-align: center;
+    text-decoration: underline;
+    color:rgb(18, 128, 68);
+    margin-bottom: 80px;
+    }
 
 
 .footerTitre {
@@ -543,7 +551,6 @@ table{
 
 /*ça t'y touches pas baptiste c'est un peu galère*/
 
-
 .slider-container {
     max-width: 800px;
     position: relative;
@@ -583,8 +590,11 @@ table{
     z-index: 10;
     transition: left 0s 0.75s;
 }
+
+
 [id^="slide"]:checked + .slide-img {
     left: 0;
     z-index: 100;
     transition: left 0.65s ease-out;
 }
+
