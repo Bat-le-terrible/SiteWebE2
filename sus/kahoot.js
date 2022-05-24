@@ -5,7 +5,7 @@ var btn1 = document.getElementById('Choix1')
 var btn2 = document.getElementById('Choix2')
 var quest_num = document.getElementById('Numquest')
 var quest_content = document.getElementById('question_content')
-quest1()
+quest15()
 checkcookies()
 
 
@@ -136,7 +136,7 @@ function quest15(){
     btn2.classList.remove('vrai'); btn2.classList.add('faux')
 }
 function finalquest(){
-    quest_num.innerHTML = "Question Fianle"; quest_content.innerHTML = "Pour réussir ce questionnaire, il faudra écrire le nom de Famille de cette personne:<br><br>[insérer image] <br><br>(Attention: il faut tout mettre en majuscules)"
+    quest_num.innerHTML = "Question Fianle"; quest_content.innerHTML = "Pour réussir ce questionnaire, il faudra écrire le nom de Famille de cette personne:<br><br> <img src='../Images/Photos_Eleves/Santatra.jpg'width='100px'> <br><br>(Attention: il faut tout mettre en majuscules)"
 
     btn1.style.display = "none"; btn2.style.display = "none"
     let liste = document.querySelector('ul')
@@ -160,7 +160,7 @@ document.body.addEventListener('click', function (evt) {
 
 function checkrep(){
     let rp = document.getElementById('rep')
-    if(rp.value === "A"){  //NDRIAMAHEFASON
+    if(rp.value === "ANDRIAMAHEFASON"){  
         let divQ = document.getElementById('question')
         let nicerep = document.getElementById('nicerep')
         let backbtn = document.getElementById('back')
