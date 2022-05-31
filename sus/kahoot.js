@@ -170,7 +170,7 @@ function checkrep(){
         backbtn.style.display = "block"
 
 
-        document.cookie = 'Try_QCM=1; path=/ ; expires=' + date;
+        document.cookie = 'Try_QCM=1; path=/JournalE2/ ; expires=' + date;
     }else{
         elimplayer()
     }
@@ -312,17 +312,17 @@ function Add1toCookie() {
     if (nbTry != "") {
         let nbTry = Number(getCookie("Try_QCM"))  //Conversion du texte en nombre
         nbTry = nbTry + 1
-        document.cookie = 'Try_QCM=' + nbTry + '; path=/ ; expires=' + date;
+        document.cookie = 'Try_QCM=' + nbTry + '; path=/JournalE2/ ; expires=' + date;
     } else {
-        document.cookie = 'Try_QCM=1; path=/ ; expires=' + date;
+        document.cookie = 'Try_QCM=1; path=/JournalE2/ ; expires=' + date;
     }
 }
 function ReduceTimeQuest11(){
     let reducer = getCookie('SMM')
     if(reducer === "False"){
         console.log('Switch')
-        document.cookie = "SMM=False; path=/ ; max-age=0"; //Suprime le cookie avec "False" en mettant une date d'expiration passée
-        document.cookie = "SMM=True; path=/ ; expires=" + date;
+        document.cookie = "SMM=False; path=/JournalE2/ ; max-age=0"; //Suprime le cookie avec "False" en mettant une date d'expiration passée
+        document.cookie = "SMM=True; path=/JournalE2/ ; expires=" + date;
         
     }
     
@@ -339,7 +339,7 @@ function checkcookies() {
     if (nbTry != "") {
 
     } else {
-        document.cookie = 'Try_QCM=1; path=/ ; expires=' + date;
+        document.cookie = 'Try_QCM=1; path=/JournalE2/ ; expires=' + date;
     }
 
     //Cookie question 11
@@ -347,7 +347,7 @@ function checkcookies() {
     if(isSMMcookie !=""){
 
     }else{
-        document.cookie = "SMM=False; path=/ ; expires=" + date;
+        document.cookie = "SMM=False; path=/JournalE2/ ; expires=" + date;
     }
 }
 
