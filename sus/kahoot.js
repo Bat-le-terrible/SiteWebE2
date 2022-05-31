@@ -5,7 +5,7 @@ var btn1 = document.getElementById('Choix1')
 var btn2 = document.getElementById('Choix2')
 var quest_num = document.getElementById('Numquest')
 var quest_content = document.getElementById('question_content')
-quest15()
+quest1()
 checkcookies()
 
 
