@@ -3,7 +3,7 @@
 
 
 //! Changer le chemin d'accès en fonction du serveur
- if(location.pathname === '/' || location.pathname === "/index.html"){
+ if(location.pathname === '/JournalE2/' || location.pathname === "/JournalE2/index.html"){
      console.log("pathname : True")
      const sus = document.getElementById('ඞ')
      if(navigator.userAgent.match (/iphone/i) || navigator.userAgent.match (/Android/i)){
@@ -18,7 +18,7 @@
          })
      }
  }
- if(location.pathname === "/credits.html"){
+ if(location.pathname === "/JournalE2/credits.html"){
      let TheRealImage = document.getElementById('key')
      TheRealImage.addEventListener('click', ()=>{
          window.location.href = "sus/pour_le_fbi.html"

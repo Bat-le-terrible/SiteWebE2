@@ -136,7 +136,7 @@ function quest15(){
     btn2.classList.remove('vrai'); btn2.classList.add('faux')
 }
 function finalquest(){
-    quest_num.innerHTML = "Question Fianle"; quest_content.innerHTML = "Pour réussir ce questionnaire, il faudra écrire le nom de Famille de cette personne:<br><br>[insérer image] <br><br>(Attention: il faut tout mettre en majuscules)"
+    quest_num.innerHTML = "Question Fianle"; quest_content.innerHTML = "Pour réussir ce questionnaire, il faudra écrire le nom de Famille de cette personne:<br><br> <img src='../Images/Photos_Eleves/Santatra.jpg'width='100px'> <br><br>(Attention: il faut tout mettre en majuscules)"
 
     btn1.style.display = "none"; btn2.style.display = "none"
     let liste = document.querySelector('ul')
@@ -160,7 +160,7 @@ document.body.addEventListener('click', function (evt) {
 
 function checkrep(){
     let rp = document.getElementById('rep')
-    if(rp.value === "A"){  //NDRIAMAHEFASON
+    if(rp.value === "ANDRIAMAHEFASON"){  
         let divQ = document.getElementById('question')
         let nicerep = document.getElementById('nicerep')
         let backbtn = document.getElementById('back')
@@ -170,7 +170,7 @@ function checkrep(){
         backbtn.style.display = "block"
 
 
-        document.cookie = 'Try_QCM=1; path=/ ; expires=' + date;
+        document.cookie = 'Try_QCM=1; path=/JournalE2/ ; expires=' + date;
     }else{
         elimplayer()
     }
@@ -312,17 +312,17 @@ function Add1toCookie() {
     if (nbTry != "") {
         let nbTry = Number(getCookie("Try_QCM"))  //Conversion du texte en nombre
         nbTry = nbTry + 1
-        document.cookie = 'Try_QCM=' + nbTry + '; path=/ ; expires=' + date;
+        document.cookie = 'Try_QCM=' + nbTry + '; path=/JournalE2/ ; expires=' + date;
     } else {
-        document.cookie = 'Try_QCM=1; path=/ ; expires=' + date;
+        document.cookie = 'Try_QCM=1; path=/JournalE2/ ; expires=' + date;
     }
 }
 function ReduceTimeQuest11(){
     let reducer = getCookie('SMM')
     if(reducer === "False"){
         console.log('Switch')
-        document.cookie = "SMM=False; path=/ ; max-age=0"; //Suprime le cookie avec "False" en mettant une date d'expiration passée
-        document.cookie = "SMM=True; path=/ ; expires=" + date;
+        document.cookie = "SMM=False; path=/JournalE2/ ; max-age=0"; //Suprime le cookie avec "False" en mettant une date d'expiration passée
+        document.cookie = "SMM=True; path=/JournalE2/ ; expires=" + date;
         
     }
     
@@ -339,7 +339,7 @@ function checkcookies() {
     if (nbTry != "") {
 
     } else {
-        document.cookie = 'Try_QCM=1; path=/ ; expires=' + date;
+        document.cookie = 'Try_QCM=1; path=/JournalE2/ ; expires=' + date;
     }
 
     //Cookie question 11
@@ -347,7 +347,7 @@ function checkcookies() {
     if(isSMMcookie !=""){
 
     }else{
-        document.cookie = "SMM=False; path=/ ; expires=" + date;
+        document.cookie = "SMM=False; path=/JournalE2/ ; expires=" + date;
     }
 }
 
